@@ -6,7 +6,7 @@
       <div class="container">
         <nav aria-label="breadcrumb" class="service-breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
             <li class="breadcrumb-item"><a href="#">Services</a></li>
             <li class="breadcrumb-item active" aria-current="page">Book Marketing</li>
           </ol>
