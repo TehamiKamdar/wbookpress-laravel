@@ -1,5 +1,9 @@
 @extends('layouts.web.layout')
 
+@section('title')
+About
+@endsection
+
 @section('content')
 
   <section class="bp-about-hero">

@@ -1,5 +1,9 @@
 @extends('layouts.web.layout')
 
+@section('title')
+Home
+@endsection
+
 @section('content')
 
     <!-- Hero Section -->

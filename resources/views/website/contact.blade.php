@@ -1,5 +1,9 @@
 @extends('layouts.web.layout')
 
+@section('title')
+Contact Us
+@endsection
+
 @section('content')
 <div class="bp-contact">
     <!-- Hero Section -->

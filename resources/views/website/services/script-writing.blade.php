@@ -1,4 +1,9 @@
 @extends('layouts.web.layout')
+
+@section('title')
+Services | Script Writing
+@endsection
+
 @section('content')
   <div class="service-page">
     <!-- Hero Banner -->

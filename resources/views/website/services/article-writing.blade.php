@@ -1,4 +1,9 @@
 @extends('layouts.web.layout')
+
+@section('title')
+Services | Article Writing
+@endsection
+
 @section('content')
 
   <div class="service-page">

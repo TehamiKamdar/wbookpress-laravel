@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Next Gen Publishing</title>
+   <title>Next Gen Publishing | @yield('title')</title>
    <!-- Bootstrap CSS -->
    <link href="{{ asset('assets/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
    <!-- Remix Icons -->

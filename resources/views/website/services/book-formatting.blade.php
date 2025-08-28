@@ -1,4 +1,9 @@
 @extends('layouts.web.layout')
+
+@section('title')
+Services | Book Formatting
+@endsection
+
 @section('content')
   <div class="service-page">
     <!-- Hero Banner -->
