@@ -2,128 +2,143 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Next Gen Publishing | @yield('title')</title>
-   <!-- Bootstrap CSS -->
-   <link href="{{ asset('assets/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-   <!-- Remix Icons -->
-   <link href="{{ asset('assets/lib/remixicons/remixicon.css') }}" rel="stylesheet">
-   <!-- Custom CSS -->
-   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-   <!-- AOS CSS -->
-   <link href="{{ asset('assets/lib/aos/aos.css') }}" rel="stylesheet">
-   <!-- Fonts API -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet">
-   <!-- Owl Carousel -->
-   <link rel="stylesheet" href="{{ asset('assets/lib/owlcarousel/owl.carousel.min.css') }}">
-   <link rel="stylesheet" href="{{ asset('assets/lib/owlcarousel/owl.theme.default.min.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Gen Publishing | @yield('title')</title>
+    <!-- Bootstrap CSS -->
+    <link href="{{ asset('assets/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Remix Icons -->
+    <link href="{{ asset('assets/lib/remixicons/remixicon.css') }}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <!-- AOS CSS -->
+    <link href="{{ asset('assets/lib/aos/aos.css') }}" rel="stylesheet">
+    <!-- Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="{{ asset('assets/lib/owlcarousel/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/lib/owlcarousel/owl.theme.default.min.css') }}">
 </head>
 @yield('styles')
+
 <body>
-   <!-- Navigation Menu -->
-   <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-         <a class="navbar-brand" href="{{ route('index') }}">
-            <i class="ri-book-open-line"></i> Next Gen Publishing
-         </a>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{{ route('index') }}">
+                <i class="ri-book-open-line"></i> Next Gen Publishing
+            </a>
 
-         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarContent"
-            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-         </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-         <div class="navbar-collapse offcanvas-menu" id="navbarContent">
-            <button class="btn-close text-reset d-lg-none" type="button" data-bs-dismiss="offcanvas"
-               aria-label="Close"></button>
-            <div class="offcanvas-content">
-               <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                     <a class="nav-link {{ Route::is('index') ? 'active' : '' }}" href="{{ route('index') }}">Home</a>
-                  </li>
-                  <li class="nav-item dropdown dropdown-hover">
-                     <a class="nav-link {{ Route::is('services.*') ? 'active' : '' }}" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Services <i class="ri-arrow-down-s-line"></i>
-                     </a>
-                     <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                        <div class="row">
-                           <div class="col-md-4 dropdown-col">
-                              <h5 class="dropdown-header">
-                                 <i class="ri-pencil-ruler-line"></i> Writing & Editing
-                              </h5>
-                              <a class="dropdown-item {{ Route::is('services.book-writing') ? 'active' : '' }}" href="{{ route('services.book-writing') }}">
-                                 <i class="ri-arrow-right-s-line"></i> Book Writing
-                              </a>
-                              <a class="dropdown-item {{ Route::is('services.book-editing') ? 'active' : '' }}" href="{{ route('services.book-editing') }}">
-                                 <i class="ri-arrow-right-s-line"></i> Book Editing
-                              </a>
-                              <a class="dropdown-item {{ Route::is('services.cover-design') ? 'active' : '' }}" href="{{ route('services.cover-design') }}">
-                                 <i class="ri-arrow-right-s-line"></i> Cover Design
-                              </a>
-                           </div>
-                           <div class="col-md-4 dropdown-col">
-                              <h5 class="dropdown-header">
-                                 <i class="ri-megaphone-line"></i> Publishing & Marketing
-                              </h5>
-                              <a class="dropdown-item {{ Route::is('services.illustration') ? 'active' : '' }}" href="{{ route('services.illustration') }}">
-                                 <i class="ri-arrow-right-s-line"></i> Illustration
-                              </a>
-                              <a class="dropdown-item {{ Route::is('services.self-publishing') ? 'active' : '' }}" href="{{ route('services.self-publishing') }}">
-                                 <i class="ri-arrow-right-s-line"></i> Self Publishing
-                              </a>
-                              <a class="dropdown-item {{ Route::is('services.book-marketing') ? 'active' : '' }}" href="{{ route('services.book-marketing') }}">
-                                 <i class="ri-arrow-right-s-line"></i> Book Marketing
-                              </a>
-                              <a class="dropdown-item {{ Route::is('services.book-formatting') ? 'active' : '' }}" href="{{ route('services.book-formatting') }}">
-                                 <i class="ri-arrow-right-s-line"></i> Book Formatting
-                              </a>
-                           </div>
-                           <div class="col-md-4 dropdown-col">
-                              <h5 class="dropdown-header">
-                                 <i class="ri-global-line"></i> Digital Presence & Content
-                              </h5>
-                              <a class="dropdown-item {{ Route::is('services.author-website') ? 'active' : '' }}" href="{{ route('services.author-website') }}">
-                                 <i class="ri-arrow-right-s-line"></i> Author Website
-                              </a>
-                              <a class="dropdown-item {{ Route::is('services.script-writing') ? 'active' : '' }}" href="{{ route('services.script-writing') }}">
-                                 <i class="ri-arrow-right-s-line"></i> Script Writing
-                              </a>
-                              <a class="dropdown-item {{ Route::is('services.blog-writing') ? 'active' : '' }}" href="{{ route('services.blog-writing') }}">
-                                 <i class="ri-arrow-right-s-line"></i> Blog Writing
-                              </a>
-                              <a class="dropdown-item {{ Route::is('services.article-writing') ? 'active' : '' }}" href="{{ route('services.article-writing') }}">
-                                 <i class="ri-arrow-right-s-line"></i> Article Writing
-                              </a>
-                           </div>
-                        </div>
-                     </ul>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link {{ Route::is('about') ? 'active' : '' }}" href="{{ route('about') }}">About
-                        Us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link {{ Route::is('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
-                  </li>
-               </ul>
+            <div class="navbar-collapse offcanvas-menu" id="navbarContent">
+                <button class="btn-close text-reset d-lg-none" type="button" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                <div class="offcanvas-content">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link {{ Route::is('index') ? 'active' : '' }}"
+                                href="{{ route('index') }}">Home</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-hover">
+                            <a class="nav-link {{ Route::is('services.*') ? 'active' : '' }}" href="#"
+                                id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services <i class="ri-arrow-down-s-line"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <div class="row">
+                                    <div class="col-md-4 dropdown-col">
+                                        <h5 class="dropdown-header">
+                                            <i class="ri-pencil-ruler-line"></i> Writing & Editing
+                                        </h5>
+                                        <a class="dropdown-item {{ Route::is('services.book-writing') ? 'active' : '' }}"
+                                            href="{{ route('services.book-writing') }}">
+                                            <i class="ri-arrow-right-s-line"></i> Book Writing
+                                        </a>
+                                        <a class="dropdown-item {{ Route::is('services.book-editing') ? 'active' : '' }}"
+                                            href="{{ route('services.book-editing') }}">
+                                            <i class="ri-arrow-right-s-line"></i> Book Editing
+                                        </a>
+                                        <a class="dropdown-item {{ Route::is('services.cover-design') ? 'active' : '' }}"
+                                            href="{{ route('services.cover-design') }}">
+                                            <i class="ri-arrow-right-s-line"></i> Cover Design
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 dropdown-col">
+                                        <h5 class="dropdown-header">
+                                            <i class="ri-megaphone-line"></i> Publishing & Marketing
+                                        </h5>
+                                        <a class="dropdown-item {{ Route::is('services.illustration') ? 'active' : '' }}"
+                                            href="{{ route('services.illustration') }}">
+                                            <i class="ri-arrow-right-s-line"></i> Illustration
+                                        </a>
+                                        <a class="dropdown-item {{ Route::is('services.self-publishing') ? 'active' : '' }}"
+                                            href="{{ route('services.self-publishing') }}">
+                                            <i class="ri-arrow-right-s-line"></i> Self Publishing
+                                        </a>
+                                        <a class="dropdown-item {{ Route::is('services.book-marketing') ? 'active' : '' }}"
+                                            href="{{ route('services.book-marketing') }}">
+                                            <i class="ri-arrow-right-s-line"></i> Book Marketing
+                                        </a>
+                                        <a class="dropdown-item {{ Route::is('services.book-formatting') ? 'active' : '' }}"
+                                            href="{{ route('services.book-formatting') }}">
+                                            <i class="ri-arrow-right-s-line"></i> Book Formatting
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 dropdown-col">
+                                        <h5 class="dropdown-header">
+                                            <i class="ri-global-line"></i> Digital Presence & Content
+                                        </h5>
+                                        <a class="dropdown-item {{ Route::is('services.author-website') ? 'active' : '' }}"
+                                            href="{{ route('services.author-website') }}">
+                                            <i class="ri-arrow-right-s-line"></i> Author Website
+                                        </a>
+                                        <a class="dropdown-item {{ Route::is('services.script-writing') ? 'active' : '' }}"
+                                            href="{{ route('services.script-writing') }}">
+                                            <i class="ri-arrow-right-s-line"></i> Script Writing
+                                        </a>
+                                        <a class="dropdown-item {{ Route::is('services.blog-writing') ? 'active' : '' }}"
+                                            href="{{ route('services.blog-writing') }}">
+                                            <i class="ri-arrow-right-s-line"></i> Blog Writing
+                                        </a>
+                                        <a class="dropdown-item {{ Route::is('services.article-writing') ? 'active' : '' }}"
+                                            href="{{ route('services.article-writing') }}">
+                                            <i class="ri-arrow-right-s-line"></i> Article Writing
+                                        </a>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Route::is('about') ? 'active' : '' }}"
+                                href="{{ route('about') }}">About
+                                Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Route::is('contact') ? 'active' : '' }}"
+                                href="{{ route('contact') }}">Contact Us</a>
+                        </li>
+                    </ul>
 
-               <div class="d-flex d-lg-block mt-auto mt-lg-0">
-                  <a href="#" class="btn btn-primary px-4 w-100" data-bs-toggle="modal"
-                     data-bs-target="#exampleModal">Get a Quote</a>
-               </div>
+                    <div class="d-flex d-lg-block mt-auto mt-lg-0">
+                        <a href="#" class="btn btn-primary px-4 w-100" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Get a Quote</a>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-   </nav>
+        </div>
+    </nav>
 
-   <!-- Add this div just before the closing body tag -->
-   <div class="offcanvas-backdrop fade"></div>
+    <!-- Add this div just before the closing body tag -->
+    <div class="offcanvas-backdrop fade"></div>
 
-   @yield('content')
+    @yield('content')
 
 
 
@@ -151,7 +166,8 @@
                     </div>
                     <!-- Partner 3 -->
                     <div class="partner-item" data-aos="zoom-in" data-aos-delay="300">
-                        <img src="https://cdn.worldvectorlogo.com/logos/forbes-2.svg" alt="Forbes" class="brand-partner">
+                        <img src="https://cdn.worldvectorlogo.com/logos/forbes-2.svg" alt="Forbes"
+                            class="brand-partner">
                     </div>
                     <!-- Partner 4 -->
                     <div class="partner-item" data-aos="zoom-in" data-aos-delay="400">
@@ -170,7 +186,8 @@
                     </div>
                     <!-- Partner 7 -->
                     <div class="partner-item" data-aos="zoom-in" data-aos-delay="700">
-                        <img src="https://static.cdnlogo.com/logos/a/14/audible.svg" alt="Audible" class="brand-partner">
+                        <img src="https://static.cdnlogo.com/logos/a/14/audible.svg" alt="Audible"
+                            class="brand-partner">
                     </div>
                 </div>
             </div>
@@ -188,7 +205,8 @@
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"WBookPress gave my novel the global reach I dreamed of. Their tools
+                    <div class="testimonial-content">"WBookPress gave my novel the global reach I dreamed of. Their
+                        tools
                         are
                         simple yet powerful."</div>
                     <p class="testimonial-author">— Daniel Carter, Author of *The Silent Sky*</p>
@@ -202,7 +220,8 @@
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"The analytics dashboard is a game changer. With WBookPress, I finally
+                    <div class="testimonial-content">"The analytics dashboard is a game changer. With WBookPress, I
+                        finally
                         understand my readers better."</div>
                     <p class="testimonial-author">— Ahmed Khan, Independent Author</p>
                 </div>
@@ -220,7 +239,8 @@
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"My students love accessing curated e-books through WBookPress. It has
+                    <div class="testimonial-content">"My students love accessing curated e-books through WBookPress. It
+                        has
                         made digital learning so much smoother."</div>
                     <p class="testimonial-author">— Dr. Emily Chen, Professor of Literature</p>
                 </div>
@@ -233,7 +253,8 @@
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"The royalty transparency on WBookPress is unmatched. I know exactly
+                    <div class="testimonial-content">"The royalty transparency on WBookPress is unmatched. I know
+                        exactly
                         where my earnings come from."</div>
                     <p class="testimonial-author">— Sophia Williams, Poet</p>
                 </div>
@@ -336,131 +357,134 @@
         </div>
     </section>
 
-   <!-- Chatbot Container -->
-   <div class="chatbot-container">
-      <!-- Chat Window -->
-      <div class="chat-window">
-         <div class="chat-header">
-            <h5>Customer Support</h5>
-            <button class="close-btn">
-               <i class="ri-close-line"></i>
-            </button>
-         </div>
-         <div class="chat-messages">
-            <div class="message bot-message">
-               <div>Hello! How can I help you today?</div>
-               <div class="timestamp">10:30 AM</div>
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
+        <!-- Chat Window -->
+        <div class="chat-window">
+            <div class="chat-header">
+                <h5>Customer Support</h5>
+                <button class="close-btn">
+                    <i class="ri-close-line"></i>
+                </button>
             </div>
-            <div class="message user-message">
-               <div>I have a question about my order.</div>
-               <div class="timestamp">10:31 AM</div>
+            <div class="chat-messages">
+                <div class="message bot-message">
+                    <div>Hello! How can I help you today?</div>
+                    <div class="timestamp">10:30 AM</div>
+                </div>
+                <div class="message user-message">
+                    <div>I have a question about my order.</div>
+                    <div class="timestamp">10:31 AM</div>
+                </div>
+                <div class="message bot-message">
+                    <div>Sure, I'd be happy to help. Could you please provide your order ID?</div>
+                    <div class="timestamp">10:31 AM</div>
+                </div>
+                <div class="bot-typing">
+                    <span>Bot is typing</span>
+                    <div class="typing-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
-            <div class="message bot-message">
-               <div>Sure, I'd be happy to help. Could you please provide your order ID?</div>
-               <div class="timestamp">10:31 AM</div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button class="send-btn">
+                    <i class="ri-send-plane-fill"></i>
+                </button>
             </div>
-            <div class="bot-typing">
-               <span>Bot is typing</span>
-               <div class="typing-dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-               </div>
-            </div>
-         </div>
-         <div class="chat-input">
-            <input type="text" placeholder="Type your message...">
-            <button class="send-btn">
-               <i class="ri-send-plane-fill"></i>
-            </button>
-         </div>
-      </div>
+        </div>
 
-      <!-- Chatbot Icon -->
-      <div class="chatbot-icon">
-         <i class="ri-chat-smile-3-line"></i>
-      </div>
-   </div>
+        <!-- Chatbot Icon -->
+        <div class="chatbot-icon">
+            <i class="ri-chat-smile-3-line"></i>
+        </div>
+    </div>
 
 
-   <!-- Modal -->
-   <div class="modal fade custom-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-lg modal-dialog modal-dialog-centered">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalLabel">
-                  <i class="ri-quill-pen-line"></i> Get in Touch
-               </h5>
-               <button type="button" class="bg-danger btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal -->
+    <div class="modal fade custom-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-lg modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <i class="ri-quill-pen-line"></i> Get in Touch
+                    </h5>
+                    <button type="button" class="bg-danger btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    @include('include.form')
+                </div>
             </div>
-            <div class="modal-body">
-               @include('include.form')
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- Footer Section -->
-   <footer class="footer">
-      <div class="container">
-         <div class="row">
-            <!-- Brand Details Section -->
-            <div class="col-lg-4 col-md-6 footer-section">
-               <div class="brand-logo">Next Gen Publishing</div>
-               <div class="brand-info">
-                  <p>Next Gen Publishing is a premier publishing platform helping authors transform their manuscripts into
-                     professionally published books. We provide end-to-end solutions from editing to distribution.</p>
-                  <p>Our mission is to empower writers and make publishing accessible to everyone.</p>
-               </div>
-               <div class="social-icons">
-                  <a href="#"><i class="ri-facebook-fill"></i></a>
-                  <a href="#"><i class="ri-twitter-fill"></i></a>
-                  <a href="#"><i class="ri-instagram-line"></i></a>
-                  <a href="#"><i class="ri-linkedin-fill"></i></a>
-                  <a href="#"><i class="ri-youtube-line"></i></a>
-               </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Brand Details Section -->
+                <div class="col-lg-4 col-md-6 footer-section">
+                    <div class="brand-logo">Next Gen Publishing</div>
+                    <div class="brand-info">
+                        <p>Next Gen Publishing is a premier publishing platform helping authors transform their
+                            manuscripts into
+                            professionally published books. We provide end-to-end solutions from editing to
+                            distribution.</p>
+                        <p>Our mission is to empower writers and make publishing accessible to everyone.</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                        <a href="#"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#"><i class="ri-youtube-line"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="col-lg-2 col-md-6 footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="ri-arrow-right-s-line"></i> Home</a></li>
+                        <li><a href="about.html"><i class="ri-arrow-right-s-line"></i> About Us</a></li>
+                        <li><a href="book-writing.html"><i class="ri-arrow-right-s-line"></i> Services</a></li>
+                        <li><a href="contact.html"><i class="ri-arrow-right-s-line"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- More Links Section -->
+                <div class="col-lg-2 col-md-6 footer-section">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="book-editing.html"><i class="ri-arrow-right-s-line"></i> Editing</a></li>
+                        <li><a href="illustration.html"><i class="ri-arrow-right-s-line"></i> Design</a></li>
+                        <li><a href="self-publishing.html"><i class="ri-arrow-right-s-line"></i> Publishing</a></li>
+                        <li><a href="book-marketing.html"><i class="ri-arrow-right-s-line"></i> Marketing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Form Section -->
+                <div class="col-lg-4 col-md-6 footer-section">
+                    <h4 class="footer-title">Get In Touch</h4>
+                    @include('include.form')
+                </div>
             </div>
 
-            <!-- Quick Links Section -->
-            <div class="col-lg-2 col-md-6 footer-section">
-               <h4 class="footer-title">Quick Links</h4>
-               <ul class="footer-links">
-                  <li><a href="index.html"><i class="ri-arrow-right-s-line"></i> Home</a></li>
-                  <li><a href="about.html"><i class="ri-arrow-right-s-line"></i> About Us</a></li>
-                  <li><a href="book-writing.html"><i class="ri-arrow-right-s-line"></i> Services</a></li>
-                  <li><a href="contact.html"><i class="ri-arrow-right-s-line"></i> Contact</a></li>
-               </ul>
+            <!-- Copyright Section -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="copyright">
+                        <p>&copy; 2023 Next Gen Publishing. All Rights Reserved. Designed with <i class="ri-heart-fill"
+                                style="color: var(--primary-color);"></i></p>
+                    </div>
+                </div>
             </div>
-
-            <!-- More Links Section -->
-            <div class="col-lg-2 col-md-6 footer-section">
-               <h4 class="footer-title">Our Services</h4>
-               <ul class="footer-links">
-                  <li><a href="book-editing.html"><i class="ri-arrow-right-s-line"></i> Editing</a></li>
-                  <li><a href="illustration.html"><i class="ri-arrow-right-s-line"></i> Design</a></li>
-                  <li><a href="self-publishing.html"><i class="ri-arrow-right-s-line"></i> Publishing</a></li>
-                  <li><a href="book-marketing.html"><i class="ri-arrow-right-s-line"></i> Marketing</a></li>
-               </ul>
-            </div>
-
-            <!-- Contact Form Section -->
-            <div class="col-lg-4 col-md-6 footer-section">
-               <h4 class="footer-title">Get In Touch</h4>
-               @include('include.form')
-            </div>
-         </div>
-
-         <!-- Copyright Section -->
-         <div class="row">
-            <div class="col-12">
-               <div class="copyright">
-                  <p>&copy; 2023 Next Gen Publishing. All Rights Reserved. Designed with <i class="ri-heart-fill"
-                        style="color: var(--primary-color);"></i></p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </footer>
+        </div>
+    </footer>
 </body>
 
 </html>
@@ -471,4 +495,30 @@
 <script src="{{ asset('assets/js/script.js') }}"></script>
 <!-- Bootstrap JS -->
 <script src="{{ asset('assets/lib/bootstrap/bootstrap.bundle.min.js') }}"></script>
+<script>
+        $('#messageForm').on('submit', function (e) {
+            e.preventDefault();
+
+            $.ajax({
+                url: "{{ route('lead.store') }}",
+                method: "POST",
+                data: $(this).serialize(),
+                success: function (response) {
+                    if (response.success) {
+                        $('#responseMsg').html('<p style="color:green;">' + response.message + '</p>');
+                        $('#leadForm')[0].reset();
+                    }
+                },
+                error: function (xhr) {
+                    let errors = xhr.responseJSON.errors;
+                    let msg = '';
+                    $.each(errors, function (key, value) {
+                        msg += '<p style="color:red;">' + value[0] + '</p>';
+                    });
+                    $('#responseMsg').html(msg);
+                }
+            });
+        });
+
+</script>
 @yield('scripts')

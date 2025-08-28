@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LeadsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,7 @@ Route::prefix('services')->name('services.')->group(function () {
 
 Route::get('/about', [HomeController::class , 'about'])->name('about');
 Route::get('/contact', [HomeController::class , 'contact'])->name('contact');
+
+
+// routes/web.php
+Route::post('/lead/store', [LeadsController::class, 'store'])->name('lead.store');
