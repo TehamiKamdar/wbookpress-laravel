@@ -31,7 +31,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="{{ route('index') }}">
-                <img src="{{ asset('assets/img/logo.png') }}" alt="Next Gen Logo" class="logo">
+                <i class="ri-book-open-line"></i> Next Gen Publishing
+                {{-- <img src="{{ asset('assets/img/logo.png') }}" alt="Next Gen Logo" class="logo"> --}}
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarContent"
@@ -198,7 +199,7 @@
 
             <div class="owl-carousel owl-theme">
                 <div class="testimonial">
-                    <div class="testimonial-content">"Working with WBookPress has transformed our content distribution.
+                    <div class="testimonial-content">"Working with Next Gen Publishing has transformed our content distribution.
                         Their
                         innovative approach and author-friendly policies make them an ideal partner for publishers and
                         writers
@@ -207,7 +208,7 @@
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"WBookPress gave my novel the global reach I dreamed of. Their
+                    <div class="testimonial-content">"Next Gen Publishing gave my novel the global reach I dreamed of. Their
                         tools
                         are
                         simple yet powerful."</div>
@@ -215,33 +216,33 @@
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"As a small publisher, we needed an affordable solution. WBookPress
+                    <div class="testimonial-content">"As a small publisher, we needed an affordable solution. Next Gen Publishing
                         made
                         e-book publishing seamless and profitable."</div>
                     <p class="testimonial-author">— Priya Mehta, Founder of Lotus Reads</p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"The analytics dashboard is a game changer. With WBookPress, I
+                    <div class="testimonial-content">"The analytics dashboard is a game changer. With Next Gen Publishing, I
                         finally
                         understand my readers better."</div>
                     <p class="testimonial-author">— Ahmed Khan, Independent Author</p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"WBookPress isn’t just a platform — it’s a supportive community for
+                    <div class="testimonial-content">"Next Gen Publishing isn’t just a platform — it’s a supportive community for
                         writers and publishers alike."</div>
                     <p class="testimonial-author">— Laura Martinez, Literary Agent</p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"Switching to WBookPress cut our distribution time in half. Their
+                    <div class="testimonial-content">"Switching to Next Gen Publishing cut our distribution time in half. Their
                         technology is ahead of the curve."</div>
                     <p class="testimonial-author">— Michael Roberts, Editor-in-Chief, BrightPage Publishing</p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"My students love accessing curated e-books through WBookPress. It
+                    <div class="testimonial-content">"My students love accessing curated e-books through Next Gen Publishing. It
                         has
                         made digital learning so much smoother."</div>
                     <p class="testimonial-author">— Dr. Emily Chen, Professor of Literature</p>
@@ -250,19 +251,19 @@
                 <div class="testimonial">
                     <div class="testimonial-content">"From manuscript upload to sales tracking, everything is effortless
                         with
-                        WBookPress."</div>
+                        Next Gen Publishing."</div>
                     <p class="testimonial-author">— Jonathan Lee, Self-Published Author</p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"The royalty transparency on WBookPress is unmatched. I know
+                    <div class="testimonial-content">"The royalty transparency on Next Gen Publishing is unmatched. I know
                         exactly
                         where my earnings come from."</div>
                     <p class="testimonial-author">— Sophia Williams, Poet</p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"WBookPress has redefined digital publishing for us. It’s reliable,
+                    <div class="testimonial-content">"Next Gen Publishing has redefined digital publishing for us. It’s reliable,
                         fast, and author-first."</div>
                     <p class="testimonial-author">— Richard Allen, Publishing Director, Global Reads</p>
                 </div>

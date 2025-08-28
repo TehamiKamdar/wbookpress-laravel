@@ -15,7 +15,7 @@ Contact Us
         </div>
 
         <div class="bp-content-container">
-            <h1 class="bp-main-heading">Contact <span>W-BookPress</span></h1>
+            <h1 class="bp-main-heading">Contact <span>Next Gen Publishing</span></h1>
             <p class="bp-subheading">Send us a message and we'll get back to you soon</p>
         </div>
     </section>

@@ -15,7 +15,7 @@ About
     </div>
 
     <div class="bp-content-container">
-      <h1 class="bp-main-heading">About <span>W-BookPress</span></h1>
+      <h1 class="bp-main-heading">About <span>Next Gen Publishing</span></h1>
       <p class="bp-description">
         For over a decade, we've been helping authors transform their ideas into published masterpieces.
         Our team of experienced writers, editors, and designers are passionate about bringing stories to life.
@@ -29,7 +29,7 @@ About
 
   <section class="bp-about" id="about">
     <div class="bp-container">
-      <h2 class="bp-section-title" data-aos="fade-up">About W-BookPress</h2>
+      <h2 class="bp-section-title" data-aos="fade-up">About Next Gen Publishing</h2>
 
       <div class="bp-content-wrapper">
         <div class="bp-image-container" data-aos="fade-right">

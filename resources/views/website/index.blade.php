@@ -28,7 +28,7 @@ Home
                         Transform Your <span>Writing</span> Into Published Masterpieces
                     </h1>
                     <p class="hero-subheading" data-aos="fade-up" data-aos-delay="200">
-                        W-BookPress helps authors and writers publish professional ebooks with our
+                        Next Gen Publishing helps authors and writers publish professional ebooks with our
                         end-to-end publishing platform. From manuscript to marketplace, we've got you covered.
                     </p>
 
