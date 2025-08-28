@@ -1,4 +1,5 @@
 <form id="messageForm" class="needs-validation" novalidate>
+    @csrf
     <div class="mb-3">
         <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
         <div class="invalid-feedback">Please enter valid name.</div>

@@ -34,7 +34,7 @@ class LeadsController extends Controller
 
         return response()->json([
             'success' => true,
-            'message' => 'Lead submitted successfully!'
+            'message' => 'Message submitted!'
         ]);
     }
 }

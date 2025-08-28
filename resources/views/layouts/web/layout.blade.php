@@ -11,6 +11,8 @@
     <link href="{{ asset('assets/lib/remixicons/remixicon.css') }}" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <!-- My Alert CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/myalert.css') }}">
     <!-- AOS CSS -->
     <link href="{{ asset('assets/lib/aos/aos.css') }}" rel="stylesheet">
     <!-- Fonts API -->
@@ -492,6 +494,7 @@
 <script src="{{ asset('assets/lib/jquery/jquery-3.7.1.min.js') }}"></script>
 <script src="{{ asset('assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('assets/lib/aos/aos.js') }}"></script>
+<script src="{{ asset('assets/js/myalert.js') }}"></script>
 <script src="{{ asset('assets/js/script.js') }}"></script>
 <!-- Bootstrap JS -->
 <script src="{{ asset('assets/lib/bootstrap/bootstrap.bundle.min.js') }}"></script>
@@ -505,17 +508,15 @@
                 data: $(this).serialize(),
                 success: function (response) {
                     if (response.success) {
-                        $('#responseMsg').html('<p style="color:green;">' + response.message + '</p>');
-                        $('#leadForm')[0].reset();
+                        myAlert.success(response.message);
+                        window.location.href = '/';
                     }
                 },
                 error: function (xhr) {
                     let errors = xhr.responseJSON.errors;
-                    let msg = '';
                     $.each(errors, function (key, value) {
-                        msg += '<p style="color:red;">' + value[0] + '</p>';
+                        myAlert.error("Problem Occured Successfully!");
                     });
-                    $('#responseMsg').html(msg);
                 }
             });
         });
