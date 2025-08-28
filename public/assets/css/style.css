@@ -83,9 +83,9 @@ body {
 }
 
 .navbar-brand .logo {
-    height: 50px;       /* navbar ke liye height fix */
-    width: auto;        /* width auto so aspect ratio maintained */
-    max-width: 150px;   /* optional: prevent logo from being too wide */
+    height: 50px;
+    width: auto;
+    max-width: 250px;
 }
 
 .navbar-brand i {

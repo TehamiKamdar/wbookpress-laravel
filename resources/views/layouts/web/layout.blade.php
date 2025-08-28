@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next Gen Publishing | @yield('title')</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.svg') }}" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="{{ asset('assets/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Remix Icons -->
@@ -31,8 +33,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="{{ route('index') }}">
-                <i class="ri-book-open-line"></i> Next Gen Publishing
-                {{-- <img src="{{ asset('assets/img/logo.png') }}" alt="Next Gen Logo" class="logo"> --}}
+                {{-- <i class="ri-book-open-line"></i> Next Gen Publishing --}}
+                <img src="{{ asset('assets/img/logo.png') }}" alt="Next Gen Logo" class="logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarContent"
