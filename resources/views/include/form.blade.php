@@ -14,5 +14,5 @@
     <div class="mb-3">
         <textarea class="form-control" id="message" name="message" placeholder="Tell us about your project"></textarea>
     </div>
-    <button type="submit" id="messageBtn" class="btn btn-footer"><i class="ri-send-plane-line"></i> Send Message</button>
+    <button type="submit" class="btn btn-footer"><i class="ri-send-plane-line"></i> Send Message</button>
 </form>
