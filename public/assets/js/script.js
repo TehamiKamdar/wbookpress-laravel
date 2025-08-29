@@ -106,78 +106,96 @@ document.addEventListener("DOMContentLoaded", function () {
     // ===== Rule Graph =====
     const RULES = {
         start: {
-            message: "Hi! How can I help you today?",
+            message: "How can I help you today?",
             options: [
-                { label: "Our Services", goto: "book" },
-                { label: "Contact", goto: "editing" },
-                { label: "Cover Design", goto: "design" },
-                { label: "Contact", goto: "contact" }
+                { label: "Our Services", goto: "services" },
+                { label: "About Us", goto: "about" },
+                { label: "Contact Us", goto: "contact" }
             ]
         },
-        book: {
-            message: "We offer end-to-end book writing (outline → drafts → revisions). What would you like to see?",
+        services: {
+            message: "We offer a wide range of services. Please choose a category:",
             options: [
-                { label: "Pricing", goto: "book_pricing" },
-                { label: "Process", goto: "book_process" },
+                { label: "✍️ Writing & Editing", goto: "writing_editing" },
+                { label: "📢 Publishing & Marketing", goto: "publishing_marketing" },
+                { label: "🌐 Digital Presence & Content", goto: "digital_presence" },
                 { label: "Back", goto: "start" }
             ]
         },
-        book_pricing: {
-            message: "Typical projects start from $X depending on scope and timeline. Want to share your requirements?",
+        writing_editing: {
+            message: "Our Writing & Editing services include:",
             options: [
-                { label: "Share Requirements", goto: "lead_form" },
-                { label: "Back", goto: "book" }
+                { label: "Book Writing", goto: "book_writing" },
+                { label: "Book Editing", goto: "book_editing" },
+                { label: "Cover Design", goto: "cover_design" },
+                { label: "Back", goto: "services" }
             ]
         },
-        book_process: {
-            message: "1) Discovery 2) Outline 3) Writing sprints 4) Revisions 5) Final delivery. What next?",
+        publishing_marketing: {
+            message: "Our Publishing & Marketing services include:",
+            options: [
+                { label: "Illustration", goto: "illustration" },
+                { label: "Self Publishing", goto: "self_publishing" },
+                { label: "Book Marketing", goto: "book_marketing" },
+                { label: "Book Formatting", goto: "book_formatting" },
+                { label: "Back", goto: "services" }
+            ]
+        },
+        digital_presence: {
+            message: "Our Digital Presence & Content services include:",
+            options: [
+                { label: "Author Website", goto: "author_website" },
+                { label: "Script Writing", goto: "script_writing" },
+                { label: "Blog Writing", goto: "blog_writing" },
+                { label: "Article Writing", goto: "article_writing" },
+                { label: "Back", goto: "services" }
+            ]
+        },
+        // Example leaf nodes
+        book_writing: {
+            message: "Our Book Writing covers outline → draft → revisions. Would you like to see pricing or process?",
+            options: [
+                { label: "Pricing", goto: "generic_pricing" },
+                { label: "Process", goto: "generic_process" },
+                { label: "Back", goto: "writing_editing" }
+            ]
+        },
+        // Generic info nodes
+        generic_pricing: {
+            message: "Pricing depends on scope. Share requirements for a custom quote?",
+            options: [
+                { label: "Share Requirements", goto: "contact" },
+                { label: "Back", goto: "services" }
+            ]
+        },
+        generic_process: {
+            message: "Our process includes discovery, drafts, revisions, and delivery.",
             options: [
                 { label: "See Portfolio", goto: "portfolio" },
-                { label: "Back", goto: "book" }
+                { label: "Back", goto: "services" }
             ]
         },
-        editing: {
-            message: "We provide developmental, line, and copy editing. What do you need?",
+        about: {
+            message: "We are a complete publishing & content agency helping authors bring their stories to life.",
             options: [
-                { label: "Editing Pricing", goto: "edit_pricing" },
-                { label: "Back", goto: "start" }
-            ]
-        },
-        edit_pricing: {
-            message: "Editing rates vary by manuscript length/quality. Share pages/word count & deadline?",
-            options: [
-                { label: "Share Requirements", goto: "lead_form" },
-                { label: "Back", goto: "editing" }
-            ]
-        },
-        design: {
-            message: "We design covers for Kindle, paperback, and hardback with 2–3 concepts. What would you like?",
-            options: [
-                { label: "See Samples", goto: "portfolio" },
-                { label: "Back", goto: "start" }
-            ]
-        },
-        portfolio: {
-            message: "Awesome! You can view samples on our Portfolio page. Anything else?",
-            options: [
-                { label: "Contact", goto: "contact" },
                 { label: "Back to Start", goto: "start" }
             ]
         },
         contact: {
-            message: "📮 Email: info@example.com | WhatsApp: +92-xxx | Or share your details below.",
+            message: "📮 Please fill the contact form below:",
             options: [
-                { label: "Share Requirements", goto: "lead_form" },
-                { label: "Back", goto: "start" }
+                { label: "Open Form", goto: "form_trigger" },
+                { label: "Back to Start", goto: "start" }
             ]
         },
-        lead_form: {
-            message: "Please share your Name, Email, and a short project brief. Our team will reach out.",
+        form_trigger: {
+            message: "[FORM_PLACEHOLDER]",
             options: [
                 { label: "Back to Start", goto: "start" }
             ]
         }
     };
+
 
     // ===== UI Elements =====
     const els = {
@@ -191,6 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // ===== Toggle =====
     els.launcher.addEventListener('click', () => {
         els.widget.classList.add('active');
+        $('#badge').hide();
     });
     els.btnClose.addEventListener('click', (e) => {
         e.stopPropagation();

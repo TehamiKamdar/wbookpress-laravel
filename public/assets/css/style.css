@@ -2578,3 +2578,16 @@ body {
     padding: 0.5rem 0.25rem;
     font-size: 0.75rem;
 }
+
+.red-animation {
+  animation: redanimate 1s linear infinite alternate;
+}
+
+@keyframes redanimate {
+  0% {
+    background-color: #920000;
+  }
+  100% {
+    background-color: #f00;
+  }
+}

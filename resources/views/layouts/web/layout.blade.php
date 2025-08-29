@@ -392,6 +392,10 @@
 
         <!-- Chatbot Icon -->
         <div class="chatbot-icon">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-white red-animation" id="badge">
+                1
+                <span class="visually-hidden">unread messages</span>
+            </span>
             <i class="ri-chat-smile-3-line"></i>
         </div>
     </div>
