@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ]
         },
         writing_editing: {
-            message: "Our Writing & Editing services include:",
+            message: "Our ✍️ Writing & Editing services include:",
             options: [
                 { label: "Book Writing", goto: "book_writing" },
                 { label: "Book Editing", goto: "book_editing" },
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ]
         },
         publishing_marketing: {
-            message: "Our Publishing & Marketing services include:",
+            message: "Our 📢 Publishing & Marketing services include:",
             options: [
                 { label: "Illustration", goto: "illustration" },
                 { label: "Self Publishing", goto: "self_publishing" },
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ]
         },
         digital_presence: {
-            message: "Our Digital Presence & Content services include:",
+            message: "Our 🌐 Digital Presence & Content services include:",
             options: [
                 { label: "Author Website", goto: "author_website" },
                 { label: "Script Writing", goto: "script_writing" },
@@ -182,19 +182,21 @@ document.addEventListener("DOMContentLoaded", function () {
             ]
         },
         contact: {
-            message: "📮 Please fill the contact form below:",
+            message: "📮 Thanks for contacting us. Click on open form to fill up your query:",
             options: [
                 { label: "Open Form", goto: "form_trigger" },
                 { label: "Back to Start", goto: "start" }
             ]
         },
         form_trigger: {
-            message: "[FORM_PLACEHOLDER]",
+            message: "[FORM_INCLUDED]",
             options: [
                 { label: "Back to Start", goto: "start" }
             ]
         }
     };
+
+
 
 
     // ===== UI Elements =====
@@ -265,17 +267,25 @@ document.addEventListener("DOMContentLoaded", function () {
         const typer = showTyping();
         setTimeout(() => {
             typer.remove();
-            addMsg(node.message, 'bot');
-            if (node.options && node.options.length > 0) {
-                renderOptions(node.options);
+
+            // 👇 yahan condition lagao
+            if (node.message === "[FORM_INCLUDED]") {
+                const formHtml = document.querySelector("#chatFormTemplate").innerHTML;
+                addMsg(formHtml, 'bot', true); // true = html message
+            } else {
+                addMsg(node.message, 'bot');
             }
-        }, 600);
+
+            renderOptions(node.options || []);
+        }, 400);
     }
+
 
     function handleChoice(opt) {
         addMsg(opt.label, 'user');
         botStep(opt.goto);
     }
+
 
     // ===== Start conversation =====
     botStep('start');

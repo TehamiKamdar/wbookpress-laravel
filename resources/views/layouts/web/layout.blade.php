@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Next Gen Publishing | @yield('title')</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('assets/img/favicon.svg') }}" type="image/x-icon">
@@ -201,7 +202,8 @@
 
             <div class="owl-carousel owl-theme">
                 <div class="testimonial">
-                    <div class="testimonial-content">"Working with Next Gen Publishing has transformed our content distribution.
+                    <div class="testimonial-content">"Working with Next Gen Publishing has transformed our content
+                        distribution.
                         Their
                         innovative approach and author-friendly policies make them an ideal partner for publishers and
                         writers
@@ -210,7 +212,8 @@
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"Next Gen Publishing gave my novel the global reach I dreamed of. Their
+                    <div class="testimonial-content">"Next Gen Publishing gave my novel the global reach I dreamed of.
+                        Their
                         tools
                         are
                         simple yet powerful."</div>
@@ -218,33 +221,38 @@
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"As a small publisher, we needed an affordable solution. Next Gen Publishing
+                    <div class="testimonial-content">"As a small publisher, we needed an affordable solution. Next Gen
+                        Publishing
                         made
                         e-book publishing seamless and profitable."</div>
                     <p class="testimonial-author">— Priya Mehta, Founder of Lotus Reads</p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"The analytics dashboard is a game changer. With Next Gen Publishing, I
+                    <div class="testimonial-content">"The analytics dashboard is a game changer. With Next Gen
+                        Publishing, I
                         finally
                         understand my readers better."</div>
                     <p class="testimonial-author">— Ahmed Khan, Independent Author</p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"Next Gen Publishing isn’t just a platform — it’s a supportive community for
+                    <div class="testimonial-content">"Next Gen Publishing isn’t just a platform — it’s a supportive
+                        community for
                         writers and publishers alike."</div>
                     <p class="testimonial-author">— Laura Martinez, Literary Agent</p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"Switching to Next Gen Publishing cut our distribution time in half. Their
+                    <div class="testimonial-content">"Switching to Next Gen Publishing cut our distribution time in
+                        half. Their
                         technology is ahead of the curve."</div>
                     <p class="testimonial-author">— Michael Roberts, Editor-in-Chief, BrightPage Publishing</p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"My students love accessing curated e-books through Next Gen Publishing. It
+                    <div class="testimonial-content">"My students love accessing curated e-books through Next Gen
+                        Publishing. It
                         has
                         made digital learning so much smoother."</div>
                     <p class="testimonial-author">— Dr. Emily Chen, Professor of Literature</p>
@@ -258,14 +266,16 @@
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"The royalty transparency on Next Gen Publishing is unmatched. I know
+                    <div class="testimonial-content">"The royalty transparency on Next Gen Publishing is unmatched. I
+                        know
                         exactly
                         where my earnings come from."</div>
                     <p class="testimonial-author">— Sophia Williams, Poet</p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"Next Gen Publishing has redefined digital publishing for us. It’s reliable,
+                    <div class="testimonial-content">"Next Gen Publishing has redefined digital publishing for us. It’s
+                        reliable,
                         fast, and author-first."</div>
                     <p class="testimonial-author">— Richard Allen, Publishing Director, Global Reads</p>
                 </div>
@@ -390,9 +400,15 @@
             </div> --}}
         </div>
 
+        <!-- Hidden Contact Form Template -->
+        <div id="chatFormTemplate" style="display:none;">
+            @include('include.form')
+        </div>
+
         <!-- Chatbot Icon -->
         <div class="chatbot-icon">
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-white red-animation" id="badge">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-white red-animation"
+                id="badge">
                 1
                 <span class="visually-hidden">unread messages</span>
             </span>
@@ -494,27 +510,31 @@
 <!-- Bootstrap JS -->
 <script src="{{ asset('assets/lib/bootstrap/bootstrap.bundle.min.js') }}"></script>
 <script>
-        $('#messageForm').on('submit', function (e) {
-            e.preventDefault();
+    $(document).on('submit', '#messageForm', function (e) {
+        e.preventDefault();
 
-            $.ajax({
-                url: "{{ route('lead.store') }}",
-                method: "POST",
-                data: $(this).serialize(),
-                success: function (response) {
-                    if (response.success) {
-                        myAlert.success(response.message);
-                        window.location.href = '/';
-                    }
-                },
-                error: function (xhr) {
-                    let errors = xhr.responseJSON.errors;
-                    $.each(errors, function (key, value) {
-                        myAlert.error("Problem Occured Successfully!");
-                    });
+        $.ajax({
+            url: "{{ route('lead.store') }}",
+            method: "POST",
+            data: $(this).serialize(),
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            success: function (response) {
+                if (response.success) {
+                    myAlert.success(response.message);
+                    window.location.href = '/';
                 }
-            });
+            },
+            error: function (xhr) {
+                let errors = xhr.responseJSON.errors;
+                $.each(errors, function (key, value) {
+                    myAlert.error(value[0]); // error message dikhado
+                });
+            }
         });
+    });
+
 
 </script>
 @yield('scripts')
