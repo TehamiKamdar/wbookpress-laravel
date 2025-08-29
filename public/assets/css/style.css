@@ -2560,3 +2560,21 @@ body {
     height: 30vh;
   }
 }
+
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+.suggestions button{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 12px;
+    padding: 0.5rem 0.25rem;
+    font-size: 0.75rem;
+}

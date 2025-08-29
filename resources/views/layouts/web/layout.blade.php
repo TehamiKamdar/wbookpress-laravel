@@ -373,18 +373,6 @@
                 </button>
             </div>
             <div class="chat-messages">
-                <div class="message bot-message">
-                    <div>Hello! How can I help you today?</div>
-                    <div class="timestamp">10:30 AM</div>
-                </div>
-                <div class="message user-message">
-                    <div>I have a question about my order.</div>
-                    <div class="timestamp">10:31 AM</div>
-                </div>
-                <div class="message bot-message">
-                    <div>Sure, I'd be happy to help. Could you please provide your order ID?</div>
-                    <div class="timestamp">10:31 AM</div>
-                </div>
                 <div class="bot-typing">
                     <span>Bot is typing</span>
                     <div class="typing-dots">
@@ -394,12 +382,12 @@
                     </div>
                 </div>
             </div>
-            <div class="chat-input">
+            {{-- <div class="chat-input">
                 <input type="text" placeholder="Type your message...">
                 <button class="send-btn">
                     <i class="ri-send-plane-fill"></i>
                 </button>
-            </div>
+            </div> --}}
         </div>
 
         <!-- Chatbot Icon -->

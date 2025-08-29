@@ -103,24 +103,163 @@ document.addEventListener("DOMContentLoaded", function () {
     mediaQuery.addEventListener('change', handleMediaQuery);
 
 
-    // Toggle chat window
-    $('.chatbot-icon').click(function () {
-        $('.chat-window').toggleClass('active');
-    });
-
-    // Close chat window
-    $('.close-btn').click(function (e) {
-        e.stopPropagation();
-        $('.chat-window').removeClass('active');
-    });
-
-    // Send message function (basic implementation)
-    $('.send-btn').click(sendMessage);
-    $('.chat-input input').keypress(function (e) {
-        if (e.which === 13) {
-            sendMessage();
+    // ===== Rule Graph =====
+    const RULES = {
+        start: {
+            message: "Hi! How can I help you today?",
+            options: [
+                { label: "Our Services", goto: "book" },
+                { label: "Contact", goto: "editing" },
+                { label: "Cover Design", goto: "design" },
+                { label: "Contact", goto: "contact" }
+            ]
+        },
+        book: {
+            message: "We offer end-to-end book writing (outline → drafts → revisions). What would you like to see?",
+            options: [
+                { label: "Pricing", goto: "book_pricing" },
+                { label: "Process", goto: "book_process" },
+                { label: "Back", goto: "start" }
+            ]
+        },
+        book_pricing: {
+            message: "Typical projects start from $X depending on scope and timeline. Want to share your requirements?",
+            options: [
+                { label: "Share Requirements", goto: "lead_form" },
+                { label: "Back", goto: "book" }
+            ]
+        },
+        book_process: {
+            message: "1) Discovery 2) Outline 3) Writing sprints 4) Revisions 5) Final delivery. What next?",
+            options: [
+                { label: "See Portfolio", goto: "portfolio" },
+                { label: "Back", goto: "book" }
+            ]
+        },
+        editing: {
+            message: "We provide developmental, line, and copy editing. What do you need?",
+            options: [
+                { label: "Editing Pricing", goto: "edit_pricing" },
+                { label: "Back", goto: "start" }
+            ]
+        },
+        edit_pricing: {
+            message: "Editing rates vary by manuscript length/quality. Share pages/word count & deadline?",
+            options: [
+                { label: "Share Requirements", goto: "lead_form" },
+                { label: "Back", goto: "editing" }
+            ]
+        },
+        design: {
+            message: "We design covers for Kindle, paperback, and hardback with 2–3 concepts. What would you like?",
+            options: [
+                { label: "See Samples", goto: "portfolio" },
+                { label: "Back", goto: "start" }
+            ]
+        },
+        portfolio: {
+            message: "Awesome! You can view samples on our Portfolio page. Anything else?",
+            options: [
+                { label: "Contact", goto: "contact" },
+                { label: "Back to Start", goto: "start" }
+            ]
+        },
+        contact: {
+            message: "📮 Email: info@example.com | WhatsApp: +92-xxx | Or share your details below.",
+            options: [
+                { label: "Share Requirements", goto: "lead_form" },
+                { label: "Back", goto: "start" }
+            ]
+        },
+        lead_form: {
+            message: "Please share your Name, Email, and a short project brief. Our team will reach out.",
+            options: [
+                { label: "Back to Start", goto: "start" }
+            ]
         }
+    };
+
+    // ===== UI Elements =====
+    const els = {
+        launcher: document.querySelector('.chatbot-icon'),
+        widget: document.querySelector('.chat-window'),
+        body: document.querySelector('.chat-messages'),
+        btnClose: document.querySelector('.close-btn'),
+        suggWrap: null
+    };
+
+    // ===== Toggle =====
+    els.launcher.addEventListener('click', () => {
+        els.widget.classList.add('active');
     });
+    els.btnClose.addEventListener('click', (e) => {
+        e.stopPropagation();
+        els.widget.classList.remove('active');
+    });
+
+    // ===== Helpers =====
+    function scrollBottom() {
+        els.body.scrollTop = els.body.scrollHeight;
+    }
+    function addMsg(text, who = 'bot') {
+        const div = document.createElement('div');
+        div.className = `message ${who}-message`;
+        div.innerHTML = `<div>${text}</div><div class="timestamp">${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</div>`;
+        els.body.appendChild(div);
+        scrollBottom();
+    }
+    function showTyping() {
+        const wrap = document.createElement('div');
+        wrap.className = 'bot-typing';
+        wrap.innerHTML = `
+        <span>Bot is typing</span>
+        <div class="typing-dots"><span></span><span></span><span></span></div>`;
+        els.body.appendChild(wrap);
+        scrollBottom();
+        return wrap;
+    }
+
+    // ===== Suggestions Renderer =====
+    function renderOptions(options) {
+        if (els.suggWrap) els.suggWrap.remove();
+
+        els.suggWrap = document.createElement('div');
+        els.suggWrap.className = 'suggestions';
+
+        options.forEach(opt => {
+            const b = document.createElement('button');
+            b.className = 'chip';
+            b.type = 'button';
+            b.textContent = opt.label;
+            b.addEventListener('click', () => handleChoice(opt));
+            els.suggWrap.appendChild(b);
+        });
+
+        els.widget.appendChild(els.suggWrap);
+    }
+
+    // ===== Bot Flow =====
+    function botStep(key) {
+        const node = RULES[key];
+        if (!node) return;
+
+        const typer = showTyping();
+        setTimeout(() => {
+            typer.remove();
+            addMsg(node.message, 'bot');
+            if (node.options && node.options.length > 0) {
+                renderOptions(node.options);
+            }
+        }, 600);
+    }
+
+    function handleChoice(opt) {
+        addMsg(opt.label, 'user');
+        botStep(opt.goto);
+    }
+
+    // ===== Start conversation =====
+    botStep('start');
 
     function scrollToBottom() {
         const messages = $('.chat-messages');
