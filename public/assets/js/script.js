@@ -290,50 +290,50 @@ document.addEventListener("DOMContentLoaded", function () {
     // ===== Start conversation =====
     botStep('start');
 
-    function scrollToBottom() {
-        const messages = $('.chat-messages');
-        messages.scrollTop(messages[0].scrollHeight);
-    }
+    // function scrollToBottom() {
+    //     const messages = $('.chat-messages');
+    //     messages.scrollTop(messages[0].scrollHeight);
+    // }
 
-    function sendMessage() {
-        const input = $('.chat-input input');
-        const message = input.val().trim();
+    // function sendMessage() {
+    //     const input = $('.chat-input input');
+    //     const message = input.val().trim();
 
-        if (message !== '') {
-            // Add user message (insert before typing indicator)
-            const timestamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-            $(`
-            <div class="message user-message">
-                <div>${message}</div>
-                <div class="timestamp">${timestamp}</div>
-            </div>
-        `).insertBefore('.bot-typing');
+    //     if (message !== '') {
+    //         // Add user message (insert before typing indicator)
+    //         const timestamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    //         $(`
+    //         <div class="message user-message">
+    //             <div>${message}</div>
+    //             <div class="timestamp">${timestamp}</div>
+    //         </div>
+    //     `).insertBefore('.bot-typing');
 
-            scrollToBottom();
+    //         scrollToBottom();
 
-            // Clear input
-            input.val('');
+    //         // Clear input
+    //         input.val('');
 
-            // Show bot is typing
-            $('.bot-typing').show();
-            scrollToBottom();
+    //         // Show bot is typing
+    //         $('.bot-typing').show();
+    //         scrollToBottom();
 
-            // Simulate bot response after a delay
-            setTimeout(function () {
-                $('.bot-typing').hide();
+    //         // Simulate bot response after a delay
+    //         setTimeout(function () {
+    //             $('.bot-typing').hide();
 
-                // Add bot response
-                $(`
-                <div class="message bot-message">
-                    <div>Thanks for your message. This is a static demo. Real functionality would be implemented with JavaScript.</div>
-                    <div class="timestamp">${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</div>
-                </div>
-            `).insertBefore('.bot-typing');
+    //             // Add bot response
+    //             $(`
+    //             <div class="message bot-message">
+    //                 <div>Thanks for your message. This is a static demo. Real functionality would be implemented with JavaScript.</div>
+    //                 <div class="timestamp">${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</div>
+    //             </div>
+    //         `).insertBefore('.bot-typing');
 
-                scrollToBottom();
-            }, 1500);
-        }
-    }
+    //             scrollToBottom();
+    //         }, 1500);
+    //     }
+    // }
 
     // Initially hide typing indicator
     $('.bot-typing').hide();

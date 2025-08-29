@@ -392,12 +392,6 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="chat-input">
-                <input type="text" placeholder="Type your message...">
-                <button class="send-btn">
-                    <i class="ri-send-plane-fill"></i>
-                </button>
-            </div> --}}
         </div>
 
         <!-- Hidden Contact Form Template -->
@@ -441,7 +435,7 @@
             <div class="row">
                 <!-- Brand Details Section -->
                 <div class="col-lg-4 col-md-6 footer-section">
-                    <div class="brand-logo">Next Gen Publishing</div>
+                    <img src="{{ asset('assets/img/logo.png') }}" alt="" class="brand-logo">
                     <div class="brand-info">
                         <p>Next Gen Publishing is a premier publishing platform helping authors transform their
                             manuscripts into
