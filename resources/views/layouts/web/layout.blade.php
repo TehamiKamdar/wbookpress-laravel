@@ -65,11 +65,11 @@
                                         </h5>
                                         <a class="dropdown-item {{ Route::is('services.book-writing') ? 'active' : '' }}"
                                             href="{{ route('services.book-writing') }}">
-                                            <i class="ri-arrow-right-s-line"></i> Book Writing
+                                            <i class="ri-arrow-right-s-line"></i> e-book Writing
                                         </a>
                                         <a class="dropdown-item {{ Route::is('services.book-editing') ? 'active' : '' }}"
                                             href="{{ route('services.book-editing') }}">
-                                            <i class="ri-arrow-right-s-line"></i> Book Editing
+                                            <i class="ri-arrow-right-s-line"></i> e-book Editing
                                         </a>
                                         <a class="dropdown-item {{ Route::is('services.cover-design') ? 'active' : '' }}"
                                             href="{{ route('services.cover-design') }}">
@@ -90,11 +90,11 @@
                                         </a>
                                         <a class="dropdown-item {{ Route::is('services.book-marketing') ? 'active' : '' }}"
                                             href="{{ route('services.book-marketing') }}">
-                                            <i class="ri-arrow-right-s-line"></i> Book Marketing
+                                            <i class="ri-arrow-right-s-line"></i> e-book Marketing
                                         </a>
                                         <a class="dropdown-item {{ Route::is('services.book-formatting') ? 'active' : '' }}"
                                             href="{{ route('services.book-formatting') }}">
-                                            <i class="ri-arrow-right-s-line"></i> Book Formatting
+                                            <i class="ri-arrow-right-s-line"></i> e-book Formatting
                                         </a>
                                     </div>
                                     <div class="col-md-4 dropdown-col">
@@ -152,9 +152,8 @@
     <section class="partners-section">
         <div class="container">
             <div class="section-title" data-aos="fade-up" data-aos-duration="1000">
-                <h2>Our Trusted Partners</h2>
-                <p>We collaborate with industry leaders and innovative brands to bring you the best content and reading
-                    experience.</p>
+                <h2>See Why They Trust Us</h2>
+                <p>Authors and partners trust us as we've delivered hundreds of popular e-books from just ideas   </p>
             </div>
 
             <div class="partners-carousel" data-aos="fade-up" data-aos-duration="1000">
@@ -201,83 +200,31 @@
 
             <div class="owl-carousel owl-theme">
                 <div class="testimonial">
-                    <div class="testimonial-content">"Working with Next Gen Publishing has transformed our content
-                        distribution.
-                        Their
-                        innovative approach and author-friendly policies make them an ideal partner for publishers and
-                        writers
-                        alike."</div>
-                    <p class="testimonial-author">— Sarah Johnson, CEO of Penguin Books</p>
+                    <div class="testimonial-content">"NextGen Publishing exactly wrote the E-book I had expectations for. The way they wrote was clear and really interesting"</div>
+                    <p class="testimonial-author">— Noah R., Historical Fiction Author (London, UK) </p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"Next Gen Publishing gave my novel the global reach I dreamed of.
-                        Their
-                        tools
-                        are
-                        simple yet powerful."</div>
-                    <p class="testimonial-author">— Daniel Carter, Author of *The Silent Sky*</p>
+                    <div class="testimonial-content">"I had a messy pile of notes to write my eBook. Writers at NextGen Publishing were eager to listen and answered every question until they wrote and published my eBook, that's got many buyers"</div>
+                    <p class="testimonial-author">— Mark Devonshire, Business Coach (Manchester, UK) </p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"As a small publisher, we needed an affordable solution. Next Gen
-                        Publishing
-                        made
-                        e-book publishing seamless and profitable."</div>
-                    <p class="testimonial-author">— Priya Mehta, Founder of Lotus Reads</p>
+                    <div class="testimonial-content">"Simply, I just loved the services of NextGen Publishing; they read minds. I just gave them some details about my E-book, and they made the exact same thing that was in my mind. It's mind-blowing."</div>
+                    <p class="testimonial-author">— Jonathan Blake – Crime fiction author, (Manchester, Greater Manchester) </p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"The analytics dashboard is a game changer. With Next Gen
-                        Publishing, I
-                        finally
-                        understand my readers better."</div>
-                    <p class="testimonial-author">— Ahmed Khan, Independent Author</p>
+                    <div class="testimonial-content">"It was my first time making a E-Book, and I tried NextGen Publishing for this work. I gave them the idea and my thoughts they made the E-Book novel that I needed. I couldn't expect that they would make such a professional E-Book."</div>
+                    <p class="testimonial-author">— Charlotte Whitmore – contemporary romance novelist, (Bath, Somerset) </p>
                 </div>
 
                 <div class="testimonial">
-                    <div class="testimonial-content">"Next Gen Publishing isn’t just a platform — it’s a supportive
-                        community for
-                        writers and publishers alike."</div>
-                    <p class="testimonial-author">— Laura Martinez, Literary Agent</p>
+                    <div class="testimonial-content">"How can anyone make a hook of the e-book like that? They made the hook of my E-book that's so catchy, I wanted to make it enjoyable to read in and NextGen Publishing has such professional writers who make my e-book catchy and enjoyable."</div>
+                    <p class="testimonial-author">— Miles Ashbury – fantasy writer, (London, Greater London) </p>
                 </div>
 
-                <div class="testimonial">
-                    <div class="testimonial-content">"Switching to Next Gen Publishing cut our distribution time in
-                        half. Their
-                        technology is ahead of the curve."</div>
-                    <p class="testimonial-author">— Michael Roberts, Editor-in-Chief, BrightPage Publishing</p>
-                </div>
 
-                <div class="testimonial">
-                    <div class="testimonial-content">"My students love accessing curated e-books through Next Gen
-                        Publishing. It
-                        has
-                        made digital learning so much smoother."</div>
-                    <p class="testimonial-author">— Dr. Emily Chen, Professor of Literature</p>
-                </div>
-
-                <div class="testimonial">
-                    <div class="testimonial-content">"From manuscript upload to sales tracking, everything is effortless
-                        with
-                        Next Gen Publishing."</div>
-                    <p class="testimonial-author">— Jonathan Lee, Self-Published Author</p>
-                </div>
-
-                <div class="testimonial">
-                    <div class="testimonial-content">"The royalty transparency on Next Gen Publishing is unmatched. I
-                        know
-                        exactly
-                        where my earnings come from."</div>
-                    <p class="testimonial-author">— Sophia Williams, Poet</p>
-                </div>
-
-                <div class="testimonial">
-                    <div class="testimonial-content">"Next Gen Publishing has redefined digital publishing for us. It’s
-                        reliable,
-                        fast, and author-first."</div>
-                    <p class="testimonial-author">— Richard Allen, Publishing Director, Global Reads</p>
-                </div>
             </div>
         </div>
     </section>
@@ -288,7 +235,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Browse Our Collection</h2>
-                <p>Discover books from various genres to satisfy your reading needs</p>
+                <p>Our successful e-books collection of hundreds of authors we've worked with.</p>
             </div>
 
             <div class="category-filter">
@@ -436,11 +383,8 @@
                 <div class="col-lg-4 col-md-6 footer-section">
                     <img src="{{ asset('assets/img/logo.png') }}" alt="" class="brand-logo">
                     <div class="brand-info">
-                        <p>Next Gen Publishing is a premier publishing platform helping authors transform their
-                            manuscripts into
-                            professionally published books. We provide end-to-end solutions from editing to
-                            distribution.</p>
-                        <p>Our mission is to empower writers and make publishing accessible to everyone.</p>
+                    <p>NextGen Publishing is a professional team of expert e-book ghostwriters, cover designers, illustration artists and e-book marketers with decades of experience in writing e-books, designing covers and interior illustrations for hundreds of authors.
+ </p>
                     </div>
                     <div class="social-icons">
                         <a href="#"><i class="ri-facebook-fill"></i></a>

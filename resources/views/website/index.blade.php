@@ -25,17 +25,15 @@ Home
                 <!-- Left Content -->
                 <div class="col-lg-8 hero-content" data-aos="fade-right" data-aos-duration="1000">
                     <h1 class="hero-heading">
-                        We’ll turn your <span>ideas</span> into a successful book
+                       We’ll Turn Your <span>Ideas</span> Into A Successful e-book
                     </h1>
                     <p class="hero-subheading" data-aos="fade-up" data-aos-delay="200">
-                        We’ve helped hundreds of authors just like you to turn their ideas into successful books, even if you
-                        don't enjoy writing. We write, edit and publish your book in your voice, your style, with a guarantee,
-                        and you get 100% credit for life with no royalty attached.
+                       We’ve helped hundreds of authors just like you to turn their ideas into successful <b>e-book</b>, even if you don't enjoy writing. We write, edit and publish your <b>e-book</b> in your voice, your style, with a guarantee, and you get 100% credit for life with no royalty attached.
                     </p>
 
                     <div class="hero-buttons" data-aos="zoom-in" data-aos-delay="400">
                         <button class="btn btn-hero-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="ri-book-open-line"></i> Get Your Book
+                            <i class="ri-book-open-line"></i> Get your new e-book
                         </button>
                         <button class="btn btn-hero-secondary" onclick="document.querySelector('.chat-window').classList.add('active');document.querySelector('#badge').classList.add('d-none');">
                             <i class="ri-information-line"></i> Chat with us
@@ -78,9 +76,8 @@ Home
     <section class="services-section">
         <div class="container">
             <div class="section-title" data-aos="fade-up" data-aos-duration="1000">
-                <h2>Our Publishing Services</h2>
-                <p>We offer end-to-end solutions for authors and writers to bring their stories to life and reach readers
-                    worldwide</p>
+                <h2>How We Help Authors Like You </h2>
+                <p>NextGen Publishing help busy authors go from only an idea to a <b>e-book</b> that sells and gains popularity through our services.</p>
             </div>
 
             <div class="row">
@@ -92,9 +89,8 @@ Home
                             <i class="ri-edit-box-line"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Manuscript Editing</h4>
-                            <p>Professional editing services to refine your manuscript, including developmental editing,
-                                copyediting, and proofreading to ensure your book is polished and ready for publication.</p>
+                            <h4>Ghostwriting </h4>
+                            <p>Whether you’ve written half of your <b>e-book</b> or haven’t started yet, we'll discuss, plan, and help you write the entire <b>e-book</b> that will sound just like you and keep the readers hooked. </p>
                             <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
                         </div>
                     </div>
@@ -108,9 +104,8 @@ Home
                             <i class="ri-paint-brush-line"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Book Cover Design</h4>
-                            <p>Captivating and professional book cover designs that grab attention and convey the essence of
-                                your story. We create covers that stand out in both physical and digital marketplaces.</p>
+                            <h4>Publishing </h4>
+                            <p>Publishing is confusing and tedious. We make it simple. We handle the ISBN, the distributors, and the setup. Your <b>e-book</b> will be for sale on Amazon and everywhere else in no time. </p>
                             <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
                         </div>
                     </div>
@@ -124,10 +119,8 @@ Home
                             <i class="ri-global-line"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Ebook Formatting</h4>
-                            <p>Professional ebook formatting for all major platforms including Kindle, Apple Books, and
-                                Kobo.
-                                We ensure your ebook looks perfect on any device with responsive formatting.</p>
+                            <h4>Proofreading </h4>
+                            <p>A typo can ruin a good <b>e-book</b>, but we won't let it happen. Our proofreaders will find every error, missing comma, and spelling mistake to give you a perfect, professional manuscript. </p>
                             <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
                         </div>
                     </div>
@@ -141,9 +134,8 @@ Home
                             <i class="ri-printer-line"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Print Publishing</h4>
-                            <p>High-quality print publishing services with options for paperback and hardcover editions. We
-                                handle everything from interior layout to print-ready files for distribution.</p>
+                            <h4>e-book Editing </h4>
+                            <p>A story that hooks readers needs a sharp edit. We tighten your language, improve the flow, make your arguments stronger, to make your <b>e-book</b> enjoyable and ready to get more buyers. </p>
                             <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
                         </div>
                     </div>
@@ -157,10 +149,8 @@ Home
                             <i class="ri-line-chart-line"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Marketing & Promotion</h4>
-                            <p>Comprehensive book marketing strategies including social media promotion, book launch
-                                campaigns,
-                                email marketing, and author website development to maximize your book's visibility.</p>
+                            <h4>Cover Design </h4>
+                            <p>People judge a e-book by its cover, and a great cover sells more. We design a cover that stops browsers in their tracks, looks professional and makes people want to buy your <b>e-book</b>. </p>
                             <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
                         </div>
                     </div>
@@ -174,10 +164,8 @@ Home
                             <i class="ri-store-line"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Distribution Services</h4>
-                            <p>Global distribution network to get your book into online retailers, brick-and-mortar stores,
-                                and
-                                libraries worldwide. We handle ISBN registration and metadata management.</p>
+                            <h4>E-book Marketing </h4>
+                            <p>A <b>e-book</b> no one sees is a secret. We help people find yours by planning your launch carefully. We get you reviews and use our proven marketing tactics to get more viewers and buyers. </p>
                             <a href="#">Learn More <i class="ri-arrow-right-line"></i></a>
                         </div>
                     </div>

@@ -18,10 +18,8 @@ Services | Book Marketing
         </nav>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h1 class="display-4 fw-bold mb-4" data-aos="fade-up">Professional Book Marketing Services</h1>
-            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Similique dolores a voluptas maiores aliquid iste dolorem laudantium cupiditate
-              aspernatur assumenda!</p>
+            <h1 class="display-4 fw-bold mb-4" data-aos="fade-up">E-book marketing to get sales ASAP </h1>
+            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">Your book is competing with 11,000 new titles a day. NextGen Publishing gives you the cover, algorithm strategy & branding to rise above the noise. </p>
             <a href="#" class="btn btn-hero-primary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#exampleModal"
               data-aos="fade-up" data-aos-delay="200">Get
               Started Today</a>
@@ -45,20 +43,14 @@ Services | Book Marketing
                 <div class="service-icon-box">
                   <i class="ri-pencil-line"></i>
                 </div>
-                <h2 class="service-title">Book Writing</h2>
+                <h2 class="service-title">Why Your Book Will Fail Without Proper Marketing </h2>
               </div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
+              <p>Your brilliant book is drowning in an ocean of 4 million new titles published every year. That's 11,000 new books being added on Amazon daily. </p>
 
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
+              <p>Being a great writer doesn't guarantee readers. Stephen King could publish anonymously tomorrow and sell 12 copies without marketing muscle behind it. </p>
 
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
-
+              <p>Hope doesn't bring buyers, and it's not a strategy, and the algorithm doesn't care about your sleepless nights or perfect prose. It rewards books that generate clicks, reviews, and sales velocity in the first 72 hours. </p>
+<p>You need a solid marketing strategy like NextGen Publishing experts to cut through the noise, get your book discovered, get buyers and great reviews. Every bestseller you've ever loved had marketing machinery working behind the scenes. </p>
               <button type="button" class="btn btn-hero-primary" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">Learn More <i class="ri-arrow-right-line"></i></button>
             </div>
@@ -82,19 +74,13 @@ Services | Book Marketing
                 <div class="service-icon-box">
                   <i class="ri-book-open-line"></i>
                 </div>
-                <h2 class="service-title">Genre Specialization</h2>
+                <h2 class="service-title">How We'll Market Your Book </h2>
               </div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
+              <p>At NextGen Publishing, we design covers that stop the scroll. Every colour, font, and image choice targets your genre's buyers and makes the e-book look premium and readworthy.  </p>
 
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
+              <p>Then we work on your Amazon account, focusing on strategic keyword placement and targeted category selection. We then optimise click-through rates and conversion funnels that turn lookers into purchasers. </p>
 
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
+              <p>But Amazon's just the starting line. We build your author brand across social media, reader communities, and book blogs where your ideal readers actually hang out. BookTok, Goodreads, and genre-specific Facebook groups, we plant seeds everywhere and focus on long-term visibility and sales rather than just one week's sales. </p>
 
               <button type="button" class="btn btn-hero-primary" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">Learn More <i class="ri-arrow-right-line"></i></button>
@@ -119,20 +105,14 @@ Services | Book Marketing
                 <div class="service-icon-box">
                   <i class="ri-team-line"></i>
                 </div>
-                <h2 class="service-title">Collaborative Process</h2>
+                <h2 class="service-title">Why NextGen Publishing Is Different </h2>
               </div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
+              <p>We're not another self-publishing tutorial site, but battle-tested professionals who've spent five years in the publishing trenches with hundreds of authors who've enjoyed the results. </p>
 
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
+              <p>While others guess, we use data with strategies that come from analysing what actually gets buyers for e-books, not just theories. </p>
 
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
-
+              <p>Our designers aren't any normal freelancers but specialists who understand genre psychology and buying triggers. They know why romance covers need different colour schemes than thrillers. </p>
+              <p>NextGen Publishing has worked and has expertise in the Amazon algorithm. When they change ranking factors, we adapt within 48 hours. Our clients continue to sell, while others scramble to figure out what happened. </p>
               <button type="button" class="btn btn-hero-primary" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">Learn More <i class="ri-arrow-right-line"></i></button>
             </div>

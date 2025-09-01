@@ -18,10 +18,8 @@ Services | Self Publishing
         </nav>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h1 class="display-4 fw-bold mb-4" data-aos="fade-up">Professional Self Publishing Services</h1>
-            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Similique dolores a voluptas maiores aliquid iste dolorem laudantium cupiditate
-              aspernatur assumenda!</p>
+            <h1 class="display-4 fw-bold mb-4" data-aos="fade-up">Self-publish your e-book without the hard work  </h1>
+            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">Doing things wrong when self-publishing can ruin your e-book’s visibility. We handle the tech so you focus on writing another one, and your e-book starts getting buyers </p>
             <a href="#" class="btn btn-hero-primary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#exampleModal"
               data-aos="fade-up" data-aos-delay="200">Get
               Started Today</a>
@@ -45,20 +43,15 @@ Services | Self Publishing
                 <div class="service-icon-box">
                   <i class="ri-pencil-line"></i>
                 </div>
-                <h2 class="service-title">Book Writing</h2>
+                <h2 class="service-title">Why Self-Publishing Alone Isn’t Ideal</h2>
               </div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
+              <p>Self-publishing sounds like freedom. But then you're suddenly wearing five hats at once, writer, designer, marketer, tech wizard, which is a big pressure for authors.  </p>
 
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
+              <p>Your homemade cover feels amateur. Then comes the formatting nightmare. You upload your masterpiece, and the text goes messy. Margins shift. Spacing breaks.</p>
 
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
-
+              <p>Furthermore, messing with ISBNs, category placement, and keyword strategy means your e-book disappears into the void because Amazon's algorithm doesn't forgive mistakes. </p>
+<p>There are different formats, e-books need clean code, paperbacks demand precise margins, and hardcovers require a specialty setup. </p>
+<p>Most self-published authors spend more time fighting technology than writing their next e-book. </p>
               <button type="button" class="btn btn-hero-primary" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">Learn More <i class="ri-arrow-right-line"></i></button>
             </div>
@@ -82,19 +75,14 @@ Services | Self Publishing
                 <div class="service-icon-box">
                   <i class="ri-book-open-line"></i>
                 </div>
-                <h2 class="service-title">Genre Specialization</h2>
+                <h2 class="service-title">How Our Self-Publishing Benefits You  </h2>
               </div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
+              <p>If you choose NextGen Publishing for self-publishing your e-book, you keep the higher royalties. Traditional publishers take 85-90% of your earnings, while other self-publishing services might charge you half. We help you keep 80% or more.  </p>
 
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
+              <p>We have no rights over your e-book. Your e-book stays yours, forever, with no sneaky contracts and no rights reversions. You wrote it, you own it.  </p>
 
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
+              <p>With us, you set the price. Want to run a 99-cent promotion? Do it. Ready to charge a premium for your expertise? We'll make it happen.  </p>
+              <p>Additionally, we handle the technical aspects, such as formatting, editing, and proofreading and even e-book cover and marketing if you opt for it, while you retain all the benefits that led you to choose self-publishing in the first place. </p>
 
               <button type="button" class="btn btn-hero-primary" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">Learn More <i class="ri-arrow-right-line"></i></button>
@@ -119,20 +107,15 @@ Services | Self Publishing
                 <div class="service-icon-box">
                   <i class="ri-team-line"></i>
                 </div>
-                <h2 class="service-title">Collaborative Process</h2>
+                <h2 class="service-title">Our Simple & Fast Publishing Process </h2>
               </div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
+              <p>You join a 45-minute call with our self-publishing specialist to discuss your e-book, timeline, and goals while answering all your questions.  </p>
 
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
+              <p>Within 48 hours, you get your complete roadmap, including design mockups, ISBN strategy, and exact costs. Zero hidden fees or surprise charges later. </p>
 
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum placeat quod obcaecati eaque nihil!
-                Numquam, recusandae consequuntur! In architecto omnis accusamus eos nobis accusantium modi doloribus
-                repellendus voluptate, aut facilis.</p>
-
+              <p>You pick your launch date, and we'll project your potential earnings based on your genre and pricing strategy. </p>
+<p>If you choose us for your e-book cover as well, we'll design a sell-worthy e-book cover and then format your e-book for every platform, testing it on real devices.</p>
+             <p>We register your ISBNs under your name, launch your e-book on all platforms, and make sure it gets the maximum visibility from day one. We then monitor everything to ensure smooth discovery and zero technical hiccups. </p>
               <button type="button" class="btn btn-hero-primary" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">Learn More <i class="ri-arrow-right-line"></i></button>
             </div>
