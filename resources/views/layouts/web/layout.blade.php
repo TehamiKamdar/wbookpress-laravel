@@ -160,37 +160,37 @@
             <div class="partners-carousel" data-aos="fade-up" data-aos-duration="1000">
                 <div class="carousel-track">
                     <!-- Partner 1 -->
-                    <div class="partner-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="partner-item">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Medium_logo_Monogram.svg/1200px-Medium_logo_Monogram.svg.png"
                             alt="Medium" class="brand-partner">
                     </div>
                     <!-- Partner 2 -->
-                    <div class="partner-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="partner-item" >
                         <img src="https://static.cdnlogo.com/logos/d/56/dribbble-icon.svg" alt="Dribbble"
                             class="brand-partner">
                     </div>
                     <!-- Partner 3 -->
-                    <div class="partner-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="partner-item">
                         <img src="https://cdn.worldvectorlogo.com/logos/forbes-2.svg" alt="Forbes"
                             class="brand-partner">
                     </div>
                     <!-- Partner 4 -->
-                    <div class="partner-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="partner-item">
                         <img src="https://static.cdnlogo.com/logos/t/76/the-new-york-times.svg" alt="New York Times"
                             class="brand-partner">
                     </div>
                     <!-- Partner 5 -->
-                    <div class="partner-item" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="partner-item">
                         <img src="https://static.cdnlogo.com/logos/p/74/penguin-books.svg" alt="Penguin Books"
                             class="brand-partner">
                     </div>
                     <!-- Partner 6 -->
-                    <div class="partner-item" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="partner-item">
                         <img src="https://static.cdnlogo.com/logos/a/9/amazon-kindle.svg" alt="Kindle"
                             class="brand-partner">
                     </div>
                     <!-- Partner 7 -->
-                    <div class="partner-item" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="partner-item">
                         <img src="https://static.cdnlogo.com/logos/a/14/audible.svg" alt="Audible"
                             class="brand-partner">
                     </div>

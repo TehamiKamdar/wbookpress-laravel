@@ -24,17 +24,31 @@ $(document).ready(function () {
         }
     });
 
-    // --- EXISTING: Carousel Logic ---
-    const $track = $('.carousel-track');
-    const $carousel = $('.partners-carousel');
+const $track = $('.carousel-track');
+const $carousel = $('.partners-carousel');
 
-    if ($carousel.length && $track.length) {
-        $carousel.on('mouseenter', function () {
-            $track.addClass('paused');
-        }).on('mouseleave', function () {
-            $track.removeClass('paused');
-        });
-    }
+if ($carousel.length && $track.length) {
+    // ✅ Clone all partner items properly
+    const $items = $track.children().clone(true, true);
+    $track.append($items);
+
+    // ✅ Calculate scroll distance dynamically
+    const $originalItems = $track.children().slice(0, $items.length);
+    let singleWidth = $originalItems.first().outerWidth(true); // width + margin
+    let totalWidth = $originalItems.length * singleWidth;
+
+    // ✅ Inject CSS variable for animation
+    $track.css('--scroll-distance', `-${totalWidth}px`);
+
+    // ✅ Pause on hover
+    $carousel.on('mouseenter', function () {
+        $track.css('animation-play-state', 'paused');
+    }).on('mouseleave', function () {
+        $track.css('animation-play-state', 'running');
+    });
+}
+
+
 
     // --- EXISTING: Book Filter Logic ---
     const $categoryButtons = $('.category-btn');

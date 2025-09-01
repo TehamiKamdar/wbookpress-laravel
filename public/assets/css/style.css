@@ -1085,8 +1085,7 @@ body {
 
 .carousel-track {
   display: flex;
-  animation: carouselScroll 25s linear infinite;
-  width: calc(200px);
+  animation: carouselScroll 18s linear infinite;
 }
 
 .partner-item {
@@ -1189,7 +1188,7 @@ body {
   }
 
   100% {
-    transform: translateX(calc(-200px * 7));
+    transform: translateX(var(--scroll-distance));
   }
 }
 
