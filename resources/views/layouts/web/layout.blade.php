@@ -428,7 +428,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="copyright">
-                        <p>&copy; 2023 Next Gen Publishing. All Rights Reserved. Designed with <i class="ri-heart-fill"
+                        <p>&copy; 2025 Next Gen Publishing. All Rights Reserved. Designed with <i class="ri-heart-fill"
                                 style="color: var(--primary-color);"></i></p>
                     </div>
                 </div>

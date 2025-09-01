@@ -17,9 +17,7 @@ About
     <div class="bp-content-container">
       <h1 class="bp-main-heading">About <span>Next Gen Publishing</span></h1>
       <p class="bp-description">
-        For over a decade, we've been helping authors transform their ideas into published masterpieces.
-        Our team of experienced writers, editors, and designers are passionate about bringing stories to life.
-        We believe every author has a unique voice that deserves to be heard.
+        Books change lives. But writing one? That’s hard. We make it easy. With years of experience and a team of experts, we’ve already published over 5,000 books for hundreds of authors, and 98% of them love us. And we publish in 24 hours. Our story deserves this.
       </p>
       <a href="#about" class="btn btn-hero-primary">
         <i class="ri-book-open-line"></i> Our Story
@@ -46,27 +44,26 @@ About
 
         <div class="bp-text-container" data-aos="fade-left">
           <span class="bp-subtitle">Your Story, Our Expertise</span>
-          <h3 class="bp-heading">Transforming Ideas Into Published Masterpieces</h3>
+          <h3 class="bp-heading">Get your success-ready e-book with a one-time fee and no effort </h3>
           <p class="bp-description">
-            At BookPress, we believe every author has a unique voice waiting to be heard.
-            Since 2010, we've helped thousands of writers transform their ideas into professionally
-            published books that captivate readers and stand out in the marketplace.
+            Forget the overwhelming maze of writing, editing, proofreading, publishing and marketing.
           </p>
           <p class="bp-description">
-            Our team of experienced editors, designers, and publishing consultants work
-            collaboratively with you to ensure your vision becomes reality. From initial
-            concept to finished book, we provide the guidance and expertise needed to
-            navigate the complex world of publishing.
+            You can choose any of our services based on where you are in your e-book writing journey, or hand us the whole project to get it done faster, so you start getting sales for your new e-book.
           </p>
-
+          <p class="bp-description">
+           With over 5,000 books brought to life, we are the silent partner behind countless successful e-books that have sold thousands of copies.  </p>
+          <p class="bp-description">
+           Our meticulous process handles every detail, from a flawless edit to a cover that sells itself.  </p>
+<p>Plus, we give you a dedicated manager to make sure your work is published lightning-fast and positioned for success, joining the 98% of authors thrilled with their finished masterpiece. </p>
           <ul class="bp-feature-list">
-            <li>Comprehensive book writing and editing services</li>
-            <li>Professional cover design and typesetting</li>
-            <li>Author website development and marketing</li>
-            <li>Traditional and self-publishing guidance</li>
+            <li>Success guaranteed editing & proofreading</li>
+            <li>Cover Designs that sold thousands of copies </li>
+            <li>Global distribution & marketing</li>
+            <li>Custom author website to get more opportunities </li>
           </ul>
 
-          <a href="#" class="btn btn-hero-primary">Discover Our Services</a>
+          <a href="#" class="btn btn-hero-primary">Become a successful author easily today</a>
         </div>
       </div>
 
