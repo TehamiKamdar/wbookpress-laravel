@@ -123,8 +123,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ Route::is('about') ? 'active' : '' }}"
-                                href="{{ route('about') }}">About
-                                Us</a>
+                                href="{{ route('about') }}">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ Route::is('contact') ? 'active' : '' }}"
@@ -456,10 +455,10 @@
                 <div class="col-lg-2 col-md-6 footer-section">
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html"><i class="ri-arrow-right-s-line"></i> Home</a></li>
-                        <li><a href="about.html"><i class="ri-arrow-right-s-line"></i> About Us</a></li>
-                        <li><a href="book-writing.html"><i class="ri-arrow-right-s-line"></i> Services</a></li>
-                        <li><a href="contact.html"><i class="ri-arrow-right-s-line"></i> Contact</a></li>
+                        <li><a href="{{ route('index') }}"><i class="ri-arrow-right-s-line"></i> Home</a></li>
+                        <li><a href="{{ route('about') }}"><i class="ri-arrow-right-s-line"></i> About Us</a></li>
+                        <li><a href="{{ route('services.book-writing') }}"><i class="ri-arrow-right-s-line"></i> Services</a></li>
+                        <li><a href="{{ route('contact') }}"><i class="ri-arrow-right-s-line"></i> Contact</a></li>
                     </ul>
                 </div>
 
@@ -467,10 +466,10 @@
                 <div class="col-lg-2 col-md-6 footer-section">
                     <h4 class="footer-title">Our Services</h4>
                     <ul class="footer-links">
-                        <li><a href="book-editing.html"><i class="ri-arrow-right-s-line"></i> Editing</a></li>
-                        <li><a href="illustration.html"><i class="ri-arrow-right-s-line"></i> Design</a></li>
-                        <li><a href="self-publishing.html"><i class="ri-arrow-right-s-line"></i> Publishing</a></li>
-                        <li><a href="book-marketing.html"><i class="ri-arrow-right-s-line"></i> Marketing</a></li>
+                        <li><a href="{{ route('services.book-editing') }}"><i class="ri-arrow-right-s-line"></i> Editing</a></li>
+                        <li><a href="{{ route('services.illustration') }}"><i class="ri-arrow-right-s-line"></i> Design</a></li>
+                        <li><a href="{{ route('services.self-publishing') }}"><i class="ri-arrow-right-s-line"></i> Publishing</a></li>
+                        <li><a href="{{ route('services.book-marketing') }}"><i class="ri-arrow-right-s-line"></i> Marketing</a></li>
                     </ul>
                 </div>
 
