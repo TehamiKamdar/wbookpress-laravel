@@ -10,7 +10,7 @@ Contact Us
     <section class="bp-contact-hero">
         <div class="bp-background-container">
             <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
-                 alt="BookPress Contact Background" class="bp-background-image">
+                 alt="NextGen Publishing Contact Background" class="bp-background-image">
             <div class="bp-background-overlay"></div>
         </div>
 

@@ -10,7 +10,7 @@ About
     <div class="bp-background-container">
       <img
         src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
-        alt="BookPress About Us Background" class="bp-background-image">
+        alt="NextGen Publishing About Us Background" class="bp-background-image">
       <div class="bp-background-overlay"></div>
     </div>
 
@@ -63,7 +63,7 @@ About
             <li>Custom author website to get more opportunities </li>
           </ul>
 
-          <a href="#" class="btn btn-hero-primary">Become a successful author easily today</a>
+          <a href="#" class="btn btn-hero-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Become a successful author easily today</a>
         </div>
       </div>
 

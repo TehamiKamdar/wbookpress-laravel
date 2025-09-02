@@ -35,7 +35,7 @@ Services | Article Writing
         <div class="row align-items-center">
           <div class="col-lg-6" data-aos="fade-right">
             <img
-              src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="{{ asset('assets/img/services/31.webp') }}"
               alt="Book Writing Process" class="img-fluid service-img">
           </div>
           <div class="col-lg-6" data-aos="fade-left">
@@ -67,7 +67,7 @@ Services | Article Writing
         <div class="row align-items-center flex-row-reverse">
           <div class="col-lg-6" data-aos="fade-left">
             <img
-              src="https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="{{ asset('assets/img/services/32.webp') }}"
               alt="Genre Specialization" class="img-fluid service-img">
           </div>
           <div class="col-lg-6" data-aos="fade-right">
@@ -98,8 +98,8 @@ Services | Article Writing
         <div class="row align-items-center">
           <div class="col-lg-6" data-aos="fade-right">
             <img
-              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Collaborative Process" class="img-fluid service-img">
+              src="{{ asset('assets/img/services/33.webp') }}"
+              alt="Service Image 3" class="img-fluid service-img">
           </div>
           <div class="col-lg-6" data-aos="fade-left">
             <div class="service-content">

@@ -1884,7 +1884,7 @@ margin-bottom: 30px;
 
 /* Hero Banner */
 .service-hero {
-  background: linear-gradient(rgba(26, 18, 41, 0.85), rgba(26, 18, 41, 0.9)), url('https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+  background: linear-gradient(rgba(26, 18, 41, 0.6), rgba(26, 18, 41, 0.6)), url('../img/services/service.webp');
   background-size: cover;
   background-position: center;
   color: var(--light-color);
