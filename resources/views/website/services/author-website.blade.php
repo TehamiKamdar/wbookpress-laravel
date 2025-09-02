@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center">
                         <h1 class="display-4 fw-bold mb-4" data-aos="fade-up">Stop Leaving Book Sales & Fans to Amazon </h1>
-                        <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">LWe build you a website to increase your discovery, get more opportunities, help your fans know about your story achievements, and even help you sell your e-book </p>
+                        <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">We build you a website to increase your discovery, get more opportunities, help your fans know about your story achievements, and even help you sell your e-book </p>
                         <a href="#" class="btn btn-hero-primary btn-lg px-4" data-bs-toggle="modal"
                             data-bs-target="#exampleModal" data-aos="fade-up" data-aos-delay="200">Get
                             Started Today</a>
