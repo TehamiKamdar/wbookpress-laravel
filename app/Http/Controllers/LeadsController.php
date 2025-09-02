@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\LeadsMail;
 use App\Models\Leads;
-use Illuminate\Http\Request;
 use Jenssegers\Agent\Agent;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class LeadsController extends Controller
 {
@@ -19,7 +21,7 @@ class LeadsController extends Controller
 
         $agent = new Agent();
 
-        Leads::create([
+        $lead = Leads::create([
             'name'        => $request->name,
             'email'       => $request->email,
             'phone'       => $request->phone,
@@ -31,6 +33,15 @@ class LeadsController extends Controller
             'browser'     => $agent->browser(),
             'platform'    => $agent->platform(),
         ]);
+
+        $details = [
+            'name'    => $lead->name,
+            'email'   => $lead->email,
+            'phone'   => $lead->phone,
+            'message' => $lead->message,
+        ];
+
+        Mail::to(config('mail.from.address'))->send(new LeadsMail($details));
 
         return response()->json([
             'success' => true,
