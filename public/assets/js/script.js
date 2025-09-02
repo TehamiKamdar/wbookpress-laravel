@@ -24,29 +24,29 @@ $(document).ready(function () {
         }
     });
 
-const $track = $('.carousel-track');
-const $carousel = $('.partners-carousel');
+    const $track = $('.carousel-track');
+    const $carousel = $('.partners-carousel');
 
-if ($carousel.length && $track.length) {
-    // ✅ Clone all partner items properly
-    const $items = $track.children().clone(true, true);
-    $track.append($items);
+    if ($carousel.length && $track.length) {
+        // ✅ Clone all partner items properly
+        const $items = $track.children().clone(true, true);
+        $track.append($items);
 
-    // ✅ Calculate scroll distance dynamically
-    const $originalItems = $track.children().slice(0, $items.length);
-    let singleWidth = $originalItems.first().outerWidth(true); // width + margin
-    let totalWidth = $originalItems.length * singleWidth;
+        // ✅ Calculate scroll distance dynamically
+        const $originalItems = $track.children().slice(0, $items.length);
+        let singleWidth = $originalItems.first().outerWidth(true); // width + margin
+        let totalWidth = $originalItems.length * singleWidth;
 
-    // ✅ Inject CSS variable for animation
-    $track.css('--scroll-distance', `-${totalWidth}px`);
+        // ✅ Inject CSS variable for animation
+        $track.css('--scroll-distance', `-${totalWidth}px`);
 
-    // ✅ Pause on hover
-    $carousel.on('mouseenter', function () {
-        $track.css('animation-play-state', 'paused');
-    }).on('mouseleave', function () {
-        $track.css('animation-play-state', 'running');
-    });
-}
+        // ✅ Pause on hover
+        $carousel.on('mouseenter', function () {
+            $track.css('animation-play-state', 'paused');
+        }).on('mouseleave', function () {
+            $track.css('animation-play-state', 'running');
+        });
+    }
 
 
 
@@ -122,9 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
         start: {
             message: "How can I help you today?",
             options: [
-                { label: "Our Services", goto: "services" },
-                { label: "About Us", goto: "about" },
-                { label: "Contact Us", goto: "contact" }
+                { label: "Our Services", goto: "services" }
             ]
         },
         services: {
@@ -139,71 +137,34 @@ document.addEventListener("DOMContentLoaded", function () {
         writing_editing: {
             message: "Our ✍️ Writing & Editing services include:",
             options: [
-                { label: "Book Writing", goto: "book_writing" },
-                { label: "Book Editing", goto: "book_editing" },
-                { label: "Cover Design", goto: "cover_design" },
+                { label: "Book Writing", goto: "form_trigger" },
+                { label: "Book Editing", goto: "form_trigger" },
+                { label: "Cover Design", goto: "form_trigger" },
                 { label: "Back", goto: "services" }
             ]
         },
         publishing_marketing: {
             message: "Our 📢 Publishing & Marketing services include:",
             options: [
-                { label: "Illustration", goto: "illustration" },
-                { label: "Self Publishing", goto: "self_publishing" },
-                { label: "Book Marketing", goto: "book_marketing" },
-                { label: "Book Formatting", goto: "book_formatting" },
+                { label: "Illustration", goto: "form_trigger" },
+                { label: "Self Publishing", goto: "form_trigger" },
+                { label: "Book Marketing", goto: "form_trigger" },
+                { label: "Book Formatting", goto: "form_trigger" },
                 { label: "Back", goto: "services" }
             ]
         },
         digital_presence: {
             message: "Our 🌐 Digital Presence & Content services include:",
             options: [
-                { label: "Author Website", goto: "author_website" },
-                { label: "Script Writing", goto: "script_writing" },
-                { label: "Blog Writing", goto: "blog_writing" },
-                { label: "Article Writing", goto: "article_writing" },
+                { label: "Author Website", goto: "form_trigger" },
+                { label: "Script Writing", goto: "form_trigger" },
+                { label: "Blog Writing", goto: "form_trigger" },
+                { label: "Article Writing", goto: "form_trigger" },
                 { label: "Back", goto: "services" }
-            ]
-        },
-        // Example leaf nodes
-        book_writing: {
-            message: "Our Book Writing covers outline → draft → revisions. Would you like to see pricing or process?",
-            options: [
-                { label: "Pricing", goto: "generic_pricing" },
-                { label: "Process", goto: "generic_process" },
-                { label: "Back", goto: "writing_editing" }
-            ]
-        },
-        // Generic info nodes
-        generic_pricing: {
-            message: "Pricing depends on scope. Share requirements for a custom quote?",
-            options: [
-                { label: "Share Requirements", goto: "contact" },
-                { label: "Back", goto: "services" }
-            ]
-        },
-        generic_process: {
-            message: "Our process includes discovery, drafts, revisions, and delivery.",
-            options: [
-                { label: "See Portfolio", goto: "portfolio" },
-                { label: "Back", goto: "services" }
-            ]
-        },
-        about: {
-            message: "We are a complete publishing & content agency helping authors bring their stories to life.",
-            options: [
-                { label: "Back to Start", goto: "start" }
-            ]
-        },
-        contact: {
-            message: "📮 Thanks for contacting us. Click on open form to fill up your query:",
-            options: [
-                { label: "Open Form", goto: "form_trigger" },
-                { label: "Back to Start", goto: "start" }
             ]
         },
         form_trigger: {
-            message: "[FORM_INCLUDED]",
+            message: "Thanks for contacting us. Fill out the query form, and we'll get back to you soon.[FORM_INCLUDED]",
             options: [
                 { label: "Back to Start", goto: "start" }
             ]
@@ -283,12 +244,20 @@ document.addEventListener("DOMContentLoaded", function () {
             typer.remove();
 
             // 👇 yahan condition lagao
-            if (node.message === "[FORM_INCLUDED]") {
+            if (node.message.includes("[FORM_INCLUDED]")) {
+                // pehle normal text show karo (FORM_INCLUDED hata ke)
+                const cleanMessage = node.message.replace("[FORM_INCLUDED]", "").trim();
+                if (cleanMessage) {
+                    addMsg(cleanMessage, 'bot');
+                }
+
+                // phir form inject karo
                 const formHtml = document.querySelector("#chatFormTemplate").innerHTML;
                 addMsg(formHtml, 'bot', true); // true = html message
             } else {
                 addMsg(node.message, 'bot');
             }
+
 
             renderOptions(node.options || []);
         }, 400);

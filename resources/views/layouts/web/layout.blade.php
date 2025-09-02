@@ -282,7 +282,7 @@
         <!-- Chat Window -->
         <div class="chat-window">
             <div class="chat-header">
-                <h5>Customer Support</h5>
+                <h5>Next Gen Assistant</h5>
                 <button class="close-btn">
                     <i class="ri-close-line"></i>
                 </button>
