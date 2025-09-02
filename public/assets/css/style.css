@@ -1741,10 +1741,17 @@ margin-bottom: 30px;
 
 .close-btn {
   background: none;
+  height: 30px;
+  width: 30px;
   border: none;
+  border-radius: 8px;
   font-size: 20px;
   cursor: pointer;
   color: var(--dark-color);
+}
+
+.close-btn:hover{
+    background-color: var(--bg-danger-background);
 }
 
 .chat-messages {
