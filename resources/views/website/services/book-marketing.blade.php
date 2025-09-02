@@ -1,7 +1,7 @@
 @extends('layouts.web.layout')
 
 @section('title')
-Services | Book Marketing
+Services | e-book Marketing
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@ Services | Book Marketing
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
             <li class="breadcrumb-item"><a href="#">Services</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Book Marketing</li>
+            <li class="breadcrumb-item active" aria-current="page">e-book Marketing</li>
           </ol>
         </nav>
         <div class="row">

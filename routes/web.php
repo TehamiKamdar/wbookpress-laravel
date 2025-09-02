@@ -18,13 +18,13 @@ use App\Http\Controllers\LeadsController;
 Route::get('/', [HomeController::class , 'index'])->name('index');
 
 Route::prefix('services')->name('services.')->group(function () {
-    Route::get('/book-writing', [HomeController::class , 'bookwriting'])->name('book-writing');
-    Route::get('/book-editing', [HomeController::class , 'bookediting'])->name('book-editing');
+    Route::get('/e-book-writing', [HomeController::class , 'bookwriting'])->name('book-writing');
+    Route::get('/e-book-editing', [HomeController::class , 'bookediting'])->name('book-editing');
     Route::get('/cover-design', [HomeController::class , 'coverdesign'])->name('cover-design');
     Route::get('/illustration', [HomeController::class , 'illustration'])->name('illustration');
     Route::get('/self-publishing', [HomeController::class , 'selfpublishing'])->name('self-publishing');
-    Route::get('/book-marketing', [HomeController::class , 'bookmarketing'])->name('book-marketing');
-    Route::get('/book-formatting', [HomeController::class , 'bookformatting'])->name('book-formatting');
+    Route::get('/e-book-marketing', [HomeController::class , 'bookmarketing'])->name('book-marketing');
+    Route::get('/e-book-formatting', [HomeController::class , 'bookformatting'])->name('book-formatting');
     Route::get('/author-website', [HomeController::class , 'authorwebsite'])->name('author-website');
     Route::get('/script-writing', [HomeController::class , 'scriptwriting'])->name('script-writing');
     Route::get('/blog-writing', [HomeController::class , 'blogwriting'])->name('blog-writing');

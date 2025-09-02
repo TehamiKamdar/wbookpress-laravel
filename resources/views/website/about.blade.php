@@ -15,7 +15,7 @@ About
     </div>
 
     <div class="bp-content-container">
-      <h1 class="bp-main-heading">About <span>Next Gen Publishing</span></h1>
+      <h1 class="bp-main-heading">About <span>NextGen Publishing</span></h1>
       <p class="bp-description">
         Books change lives. But writing one? That’s hard. We make it easy. With years of experience and a team of experts, we’ve already published over 5,000 books for hundreds of authors, and 98% of them love us. And we publish in 24 hours. Our story deserves this.
       </p>
@@ -27,7 +27,7 @@ About
 
   <section class="bp-about" id="about">
     <div class="bp-container">
-      <h2 class="bp-section-title" data-aos="fade-up">About Next Gen Publishing</h2>
+      <h2 class="bp-section-title" data-aos="fade-up">About NextGen Publishing</h2>
 
       <div class="bp-content-wrapper">
         <div class="bp-image-container" data-aos="fade-right">

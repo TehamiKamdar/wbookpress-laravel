@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Next Gen Publishing | @yield('title')</title>
+    <title>NextGen Publishing | @yield('title')</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('assets/img/favicon.svg') }}" type="image/x-icon">
     <!-- Bootstrap CSS -->
@@ -34,8 +34,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="{{ route('index') }}">
-                {{-- <i class="ri-book-open-line"></i> Next Gen Publishing --}}
-                <img src="{{ asset('assets/img/logo.png') }}" alt="Next Gen Logo" class="logo">
+                {{-- <i class="ri-book-open-line"></i> NextGen Publishing --}}
+                <img src="{{ asset('assets/img/logo.png') }}" alt="NextGen Logo" class="logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarContent"
@@ -149,53 +149,12 @@
 
 
     <!-- Trusted Partners Section -->
-    <section class="partners-section">
+    <section class="partners-section {{ Route::is('contact') ? 'd-none' : '' }}">
         <div class="container">
             <div class="section-title" data-aos="fade-up" data-aos-duration="1000">
                 <h2>See Why They Trust Us</h2>
                 <p>Authors and partners trust us as we've delivered hundreds of popular e-books from just ideas   </p>
             </div>
-
-            <div class="partners-carousel" data-aos="fade-up" data-aos-duration="1000">
-                <div class="carousel-track">
-                    <!-- Partner 1 -->
-                    <div class="partner-item">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Medium_logo_Monogram.svg/1200px-Medium_logo_Monogram.svg.png"
-                            alt="Medium" class="brand-partner">
-                    </div>
-                    <!-- Partner 2 -->
-                    <div class="partner-item" >
-                        <img src="https://static.cdnlogo.com/logos/d/56/dribbble-icon.svg" alt="Dribbble"
-                            class="brand-partner">
-                    </div>
-                    <!-- Partner 3 -->
-                    <div class="partner-item">
-                        <img src="https://cdn.worldvectorlogo.com/logos/forbes-2.svg" alt="Forbes"
-                            class="brand-partner">
-                    </div>
-                    <!-- Partner 4 -->
-                    <div class="partner-item">
-                        <img src="https://static.cdnlogo.com/logos/t/76/the-new-york-times.svg" alt="New York Times"
-                            class="brand-partner">
-                    </div>
-                    <!-- Partner 5 -->
-                    <div class="partner-item">
-                        <img src="https://static.cdnlogo.com/logos/p/74/penguin-books.svg" alt="Penguin Books"
-                            class="brand-partner">
-                    </div>
-                    <!-- Partner 6 -->
-                    <div class="partner-item">
-                        <img src="https://static.cdnlogo.com/logos/a/9/amazon-kindle.svg" alt="Kindle"
-                            class="brand-partner">
-                    </div>
-                    <!-- Partner 7 -->
-                    <div class="partner-item">
-                        <img src="https://static.cdnlogo.com/logos/a/14/audible.svg" alt="Audible"
-                            class="brand-partner">
-                    </div>
-                </div>
-            </div>
-
             <div class="divider" data-aos="fade-up"></div>
 
             <div class="owl-carousel owl-theme">
@@ -231,7 +190,7 @@
 
 
     <!-- Our Books Section -->
-    <section class="book-catalog">
+    <section class="book-catalog {{ Route::is('contact') ? 'd-none' : '' }}">
         <div class="container">
             <div class="section-title">
                 <h2>Browse Our Collection</h2>
@@ -428,7 +387,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="copyright">
-                        <p>&copy; 2025 Next Gen Publishing. All Rights Reserved. Designed with <i class="ri-heart-fill"
+                        <p>&copy; 2025 NextGen Publishing. All Rights Reserved. Designed with <i class="ri-heart-fill"
                                 style="color: var(--primary-color);"></i></p>
                     </div>
                 </div>
